@@ -14,7 +14,7 @@
   {
     "id": "2",
     "name": "vanilla_js",
-    "src": "/assets/svgs/logo-javascript.svg",
+    "src": "/assets/svgs/logo-javascript.png",
     "alt": "vanilla_js"
   },
   {
@@ -26,68 +26,67 @@
   {
     "id": "4",
     "name": "sass",
-    "src": "/assets/svgs/sass-svgrepo-com.svg",
+    "src": "/assets/svgs/sass-svgrepo-com.png",
     "alt": "sass"
   },
   {
     "id": "5",
-    "name": "type_s",
-    "src": "/assets/svgs/typescript-svgrepo-com.svg",
-    "alt": "Typescript"
+    "name": "bootstrap",
+    "src": "/assets/svgs/bootstrap-svgrepo-com.png",
+    "alt": "bootstrap"
   },
   {
     "id": "6",
-    "name": "graphql",
-    "src": "/assets/svgs/GraphQL_Brand_Assets/GraphQL_logo_(Rhodamine).svg",
-    "alt": "GraphQL"
+    "name": "type_s",
+    "src": "/assets/svgs/typescript-svgrepo-com.png",
+    "alt": "Typescript"
   },
   {
     "id": "7",
-    "name": "python",
-    "src": "/assets/svgs/python-svgrepo-com.svg",
-    "alt": "Python"
+    "name": "graphql",
+    "src": "/assets/svgs/graphql-svgrepo-com.png",
+    "alt": "GraphQL"
   },
   {
     "id": "8",
-    "name": "golang",
-    "src": "/assets/svgs/go-svgrepo-com.svg",
-    "alt": "Golang"
+    "name": "python",
+    "src": "/assets/svgs/python-svgrepo-com.png",
+    "alt": "Python"
   },
   {
     "id": "9",
-    "name": "node_js",
-    "src": "/assets/svgs/nodejs-icon-svgrepo-com.svg",
-    "alt": "node_js"
+    "name": "golang",
+    "src": "/assets/svgs/go-svgrepo-com.png",
+    "alt": "Golang"
   },
   {
     "id": "10",
-    "name": "adobe_xd",
-    "src": "/assets/svgs/Adobe_XD_CC_icon.svg",
-    "alt": "AdobeXD"
+    "name": "node_js",
+    "src": "/assets/svgs/nodejs-icon-svgrepo-com.png",
+    "alt": "node_js"
   },
   {
     "id": "11",
+    "name": "adobe_xd",
+    "src": "/assets/svgs/Adobe_XD_CC_icon.png",
+    "alt": "AdobeXD"
+  },
+  {
+    "id": "12",
     "name": "figma",
     "src": "/assets/svgs/figma-svgrepo-com.svg",
     "alt": "Figma"
   },
   {
-    "id": "12",
+    "id": "13",
     "name": "zeplin",
-    "src": "/assets/svgs/zeplin.svg",
+    "src": "/assets/svgs/zeplin.png",
     "alt": "Zeplin"
   },
   {
-    "id": "13",
-    "name": "bootstrap",
-    "src": "/assets/svgs/bootstrap-svgrepo-com.svg",
-    "alt": "bootstrap"
-  },
-
-  {
     "id": "14",
     "name": "git_gui",
-    "src": "/assets/svgs/sourcetree-svgrepo-com.svg",
+    "src": "/assets/svgs/sourcetree-svgrepo-com.png",
     "alt": "Sourcetree"
   },
   {

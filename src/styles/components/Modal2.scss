@@ -18,15 +18,15 @@ div.modal2 {
     > button[type="button"].off {
       position: absolute;
       top: 15vh;
-      width: 30px;
-      height: 30px;
+      width: 2rem;
+      height: 2rem;
       -o-transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
       -moz-transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
       -webkit-transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
       transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
       &:hover {
-        width: 35px;
-        height: 35px;
+        width: 2.3rem;
+        height: 2.3rem;
         background-color: transparent;
       }
     }
@@ -153,7 +153,7 @@ div.modal2 {
       flex-flow: column wrap;
       justify-content: space-evenly;
       > button[type="button"].off {
-        top: 5rem;
+        top: 13rem;
         right: 10vw;
       }
       >div.completionImg {

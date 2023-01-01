@@ -347,10 +347,10 @@
   @media screen and (max-width: 320px) {
     div.modal {
       &.open {
-        padding: 20vh 4vw 10vh;
+        padding: 30vh 4vw 5vh;
         flex-flow: column wrap;
         > button[type="button"].off {
-          top: 5rem;
+          top: 13rem;
           right: 8vw;
         }
         > div.completionImg {

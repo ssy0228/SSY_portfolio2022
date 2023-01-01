@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+@import url('./Theme.scss');
+@import url('./effect.scss');
 
 * {
 	margin: 0;
@@ -14,71 +16,83 @@
 
 
 :root {
-  --bg: rgb(162, 231, 210);
-  --bg-trans : rgba(255, 255, 255, 0.338);
-  --link : rgb(34, 0, 62);
-  --link-focus : rgb(255, 227, 43);
-  --word : rgba(186, 255, 212, 0.9);
-  --info1 : rgb(0, 193, 87);
-  --info2: rgba(0, 200, 140, 0.722);
-  --info3 : rgba(36, 235, 59, 0.901);
-  --info4: rgb(96, 216, 66);
-  --info-trans :rgba(0, 176, 67, 0.742);
-  --box: rgb(78, 183, 134);
-  --box-trans : rgba(255, 255, 255, 0.4);
-  --box-focus: rgb(0, 188, 103);
-  --popup : rgb(119, 195, 133);
-  --textbox: rgba(196, 255, 236, 0.708);
-  --textbox-focus : rgba(176, 253, 184, 0.641);
-  --drawer : rgb(56, 206, 106);
-  --border: 1px solid rgb(38, 198, 9);
-  --border-focus: 3px solid rgb(221, 255, 53);
-  --holder: rgb(0, 175, 56);
-  --holder-focus : rgb(0, 93, 6);
-  --button : rgb(142, 220, 175);
-  --button-color: rgb(255, 185, 34);
-  --button-active: rgba(0, 154, 105, 0.934);
-  --button-round : rgba(200, 255, 204, 0.656);
-  --button-round-act: rgb(0, 172, 11);
-  --track : rgba(199, 255, 184, 0.561);
-  --thumb : rgb(0, 126, 4);
-  --shadow: rgba(21, 0, 42, 0.996) 0 0.06rem .2rem;
-  --header: rgb(0, 198, 126);
-  --footer: rgba(113, 202, 135, 0.681);
+  --bg: rgb(232, 247, 255);
+  --bg-trans : rgba(255, 255, 255, 0.531);
+  --link : rgb(3, 0, 82);
+  --link-focus : rgb(255, 244, 39);
+  --word : rgba(140, 238, 255, 0.9);
+  // --info1 : rgb(40, 156, 238);
+  // --info2: rgba(15, 85, 225, 0.722);
+  // --info3 : rgba(41, 59, 255, 0.901);
+  // --info4: rgb(40, 126, 225);
+  // --info5 : rgb(40, 156, 238);
+  --info6: rgba(15, 85, 225, 0.722);
+  --info-trans :rgba(160, 203, 255, 0.742);
+  --box: rgba(100, 160, 207, 0.941);
+  --box-trans : rgba(160, 225, 255, 0.485);
+  --box-focus: rgb(95, 179, 212);
+  --popup : rgb(64, 176, 231);
+  --textbox: rgba(143, 229, 255, 0.708);
+  --textbox-focus : rgba(128, 185, 235, 0.641);
+  --drawer : rgb(77, 193, 255);
+  --border: 1px solid rgb(173, 240, 255);
+  --border-focus: 3px solid rgb(90, 233, 255);
+  --holder: rgb(54, 86, 246);
+  --holder-focus : rgb(1, 35, 114);
+  --button : rgb(62, 168, 255);
+  --button-color: rgb(255, 190, 51);
+  --button-active: rgba(62, 121, 214, 0.907);
+  --button-round : rgba(230, 247, 255, 0.916);
+  --button-round-act: rgb(65, 176, 255);
+  --track : rgba(113, 235, 253, 0.713);
+  --thumb : rgb(42, 159, 255);
+  --shadow: rgba(0, 6, 42, 0.996) 0 0.06rem .3rem;
+  --header: rgb(54, 164, 228);
+  --footer: rgba(37, 143, 205, 0.593);
+
+  --pc-lg: 70%;
+  --pc: 75%;
+  --tablet-port : 80%;
+  --mobile-lg: 85%;
+  --mobile-md: 90%;
+  --mobile-small: 95%;
+  --vh : 100%;
 }
 
 :root[data-theme="light"] {
-  --bg: rgb(162, 231, 210);
-  --bg-trans : rgba(255, 255, 255, 0.338);
-  --link : rgb(34, 0, 62);
-  --link-focus : rgb(255, 227, 43);
-  --word : rgba(186, 255, 212, 0.9);
-  --info1 : rgb(0, 193, 87);
-  --info2: rgba(0, 200, 140, 0.722);
-  --info3 : rgba(36, 235, 59, 0.901);
-  --info4: rgb(96, 216, 66);
-  --info-trans :rgba(0, 176, 67, 0.742);
-  --box: rgb(78, 183, 134);
-  --box-trans : rgba(255, 255, 255, 0.4);
-  --box-focus: rgb(0, 188, 103);
-  --popup : rgb(119, 195, 133);
-  --textbox: rgba(196, 255, 236, 0.708);
-  --textbox-focus : rgba(176, 253, 184, 0.641);
-  --drawer : rgb(56, 206, 106);
-  --border: 1px solid rgb(38, 198, 9);
-  --border-focus: 3px solid rgb(221, 255, 53);
-  --holder: rgb(0, 175, 56);
-  --holder-focus : rgb(0, 93, 6);
-  --button : rgb(142, 220, 175);
-  --button-color: rgb(255, 185, 34);
-  --button-active: rgba(0, 154, 105, 0.934);
-  --button-round : rgba(200, 255, 204, 0.656);
-  --button-round-act: rgb(0, 172, 11);
-  --track : rgba(199, 255, 184, 0.561);
-  --thumb : rgb(0, 126, 4);
-  --shadow: rgba(21, 0, 42, 0.996) 0 0.06rem .3rem;
-  --header: rgb(0, 198, 126);
-  --footer: rgba(113, 202, 135, 0.681);
+  --bg: rgb(232, 247, 255);
+  --bg-trans : rgba(255, 255, 255, 0.531);
+  --link : rgb(3, 0, 82);
+  --link-focus : rgb(255, 244, 39);
+  --word : rgba(140, 238, 255, 0.9);
+  // --info1 : rgb(40, 156, 238);
+  // --info2: rgba(15, 85, 225, 0.722);
+  // --info3 : rgba(41, 59, 255, 0.901);
+  // --info4: rgb(40, 126, 225);
+  // --info5 : rgb(40, 156, 238);
+  --info6: rgba(15, 85, 225, 0.722);
+  --info-trans :rgba(160, 203, 255, 0.742);
+  --box: rgba(100, 160, 207, 0.941);
+  --box-trans : rgba(160, 225, 255, 0.485);
+  --box-focus: rgb(95, 179, 212);
+  --popup : rgb(64, 176, 231);
+  --textbox: rgba(143, 229, 255, 0.708);
+  --textbox-focus : rgba(128, 185, 235, 0.641);
+  --drawer : rgb(77, 193, 255);
+  --border: 1px solid rgb(173, 240, 255);
+  --border-focus: 3px solid rgb(90, 233, 255);
+  --holder: rgb(54, 86, 246);
+  --holder-focus : rgb(1, 35, 114);
+  --button : rgb(62, 168, 255);
+  --button-color: rgb(255, 190, 51);
+  --button-active: rgba(62, 121, 214, 0.907);
+  --button-round : rgba(230, 247, 255, 0.916);
+  --button-round-act: rgb(65, 176, 255);
+  --track : rgba(113, 235, 253, 0.713);
+  --thumb : rgb(42, 159, 255);
+  --shadow: rgba(0, 6, 42, 0.996) 0 0.06rem .3rem;
+  --header: rgb(54, 164, 228);
+  --footer: rgba(37, 143, 205, 0.593);
 }
 
 :root[data-theme="dark"] {
@@ -91,6 +105,8 @@
   --info2: rgb(93, 0, 255);
   --info3 : rgb(117, 33, 226);
   --info4: rgb(67, 49, 155);
+  --info5 : rgb(84, 26, 115);
+  --info6: rgba(95, 31, 205, 0.722);
   --info-trans :rgb(141, 93, 169);
   --box: rgba(40, 0, 99, 0.67);
   --box-trans : rgba(24, 13, 43, 0.307);
@@ -111,7 +127,7 @@
   --track : rgba(0, 5, 51, 0.561);
   --thumb : rgb(115, 29, 173);
   --shadow: rgb(225, 156, 255) 0 0.0615rem 0.3125rem;
-  --header: rgba(33, 0, 91, 0.701);
+  --header: rgb(33, 0, 91);
   --footer: rgba(31, 12, 70, 0.531);
 }
 
@@ -119,6 +135,7 @@ html {
   background-color: var(--bg);
   width: 100%;
   height: 100%;
+  min-height: -webkit-fill-available;
   font-size: 62.5%;
   &[i18next = "ko"],
   &[i18next = "ja"] {
@@ -130,35 +147,28 @@ html {
 
   &[i18next= "en"] {
     body {
-      text-align: justify;
+      text-align: left;
       word-break: keep-all;
       -moz-hyphens: auto;
       -webkit-hyphens: auto;
       hyphens: auto;
     }
   }
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 
 body {
   width: 100%;
+  min-height: -webkit-fill-available;
+  min-height: 100vh;
   max-width: 100% !important;
   overflow-x: hidden !important;
-  // scroll-behavior: smooth;
+  scroll-behavior: smooth;
   &::-webkit-scrollbar {
-    position: absolute;
-    appearance: none;
-    position: fixed;
-    width: 10px;
-    height: 100vh;
-    cursor: auto;
-    background-color: var(--track);
-  }
-  &::-webkit-scrollbar-thumb {
-    height: auto;
-    background-color: var(--thumb);
-    border-radius: 30px;
-    cursor: auto;
+    display: none;
   }
   // image faster load
   &::after {
@@ -171,6 +181,8 @@ body {
     url(../assets/images/galaxy-8k-j6-1920x1080.jpg) 
     url(../assets/images/Gradient2.png) 
     url(../assets/images/Night-Background-long.png)
+    url(../assets/images/clouds-2085112.png)
+    url(../assets/images/taylor-van-riper-yQorCngxzwI-unsplash.png)
   }
 }
 
@@ -180,7 +192,7 @@ div#root {
   height: 100%;
   max-width: 100% !important;
   overflow-x: hidden !important;
-  background-size: 100% 100% !important;
+  background-size: cover !important;
   background-repeat: no-repeat;
   background-attachment: fixed !important;
   cursor: none;
@@ -189,8 +201,6 @@ div#root {
 
   transition: all 0.3s;
 }
-
-
 
 a,
 button,

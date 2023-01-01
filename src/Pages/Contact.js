@@ -11,7 +11,7 @@ const Contact = () => {
     e.preventDefault();
     emailjs.sendForm('service_o3t2d3w', 'template_dnw18lh', form.current, 'kphMJBi_3SmRLn9AC')
     .then((response) => {
-        console.log('Great! Sending is success!🥰')
+        alert('Great! Sending is success!🥰')
     }, (error) => { 
         alert('OMG! Sending got error!😢')
     } );
@@ -30,7 +30,7 @@ const Contact = () => {
               <label htmlFor="e-mail" className="blind">
                 E-mail Address
               </label>
-              <input type="email" name="mailaddr" id="e-mail" placeholder="Mail address ( example@abc.com )" required/>
+              <input type="email" name="mailaddr" id="e-mail" placeholder="Your address ( example@abc.com )" required/>
               <label htmlFor="message" className="blind">
                 Message
               </label>
@@ -50,15 +50,15 @@ const Contact = () => {
             </p>
           </div>
           <div className="link_set">
-            <a href="mailto:andy880326@naver.com">
+            <a href="mailto:alchemist0228@gmail.com">
               <span className="ico">
-                <img src="/assets/svgs/email-svgrepo-com.svg" alt="Another_mail" />
+                <img src={process.env.PUBLIC_URL + "/assets/svgs/email-svgrepo-com.svg"} alt="Another_mail" />
               </span>
-              <span className="label">KakaoTalk</span>
+              <span className="label">another e-mail</span>
             </a>
             <a href="https://github.com/ssy0228" target="_blank" rel="noopner noreferrer">
               <span className="ico">
-                <img src="/assets/svgs/icons8-github-48.svg" alt="github-logo" />
+                <img src={process.env.PUBLIC_URL + "/assets/svgs/icons8-github-48.svg"} alt="github-logo" />
               </span>
               <span className="label">Github</span>
             </a>

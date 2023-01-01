@@ -5,14 +5,7 @@
 /* common */
 
 // all pages common call
-
-
-@media screen and (max-width: 489px) {
-  .pointer {
-    display: none;
-  }
-}
-
+@media (hover: hover) and (pointer: fine) {
 @media screen and (min-width: 500px) {
   .pointer2 {
     background-image: url(../../assets/images/50-505835_feather-hd-png-images-pluspng-transparent-background.png);
@@ -41,8 +34,6 @@
   }
 }
 
-
-  
 /* system default + pointer */
 
   [data-theme='light'] .pointer2 {
@@ -60,7 +51,7 @@
       background-image: url(../../assets/images/Saturn_web_pointer.png);
     }
   }
-
+}
 
 
 

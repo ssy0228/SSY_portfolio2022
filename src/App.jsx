@@ -1,10 +1,8 @@
-import React, { lazy, Fragment, useState } from "react";
+import React, { lazy, Fragment } from "react";
 import "./styles/App.scss";
-import "./styles/importscss.scss";
 const Cursor = lazy(() => import("./components/Customs/Cursor"));
 const ErrMsg = lazy(() => import("./components/Customs/ErrMsg"));
 const Navigation = lazy(() => import("./components/Head"));
-
 const Banner = lazy(() => import("./Pages/Banner"));
 const About = lazy(() => import("./Pages/About"));
 const Skills = lazy(() => import("./Pages/Skills"));
@@ -16,11 +14,12 @@ const ModalImg = lazy(() => import("./components/modalimg/ModalImg"));
 const ModalImg2 = lazy(() => import("./components/modalimg/ModalImg2"));
 
 
-// const ModeChanger = lazy(() => import("./hooks/Darkmode"));
-
-
 const App = () => {
-  const [isDark, setIsDark] = useState(true);
+  const setVh = () => { 
+    document.documentElement.style.setProperty('--vh', `${window.innerHeight}px`);
+  }
+  window.addEventListener('resize', setVh);
+  setVh();
 
   return (
     <Fragment>
@@ -28,12 +27,14 @@ const App = () => {
       <ErrMsg />
       <div className="pages" >
         <Navigation />
-        <div className={`ani ${isDark ? "night" : ""}`}></div>
+        <div className={`ani`}></div>
         <Banner />
-        <About />
-        <Skills />
-        <Works />
-        <Contact />
+        <div className="wrapper">
+          <About />
+          <Skills />
+          <Works />
+          <Contact />
+        </div>
         <Footer />
       </div>
       <ModeChanger />

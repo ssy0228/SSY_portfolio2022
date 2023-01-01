@@ -2,44 +2,402 @@
 
 
 // darkmode only
+
 div.ani {
   background-position: right bottom;
   animation: rocket infinite 5s ease-in 0s;
   transform-origin: right center;
 }
 
-
-@keyframes rocket {
-  0% {
-    // top: 50%;
-    // left: 5%;
-    transform: rotate(0deg);
+@media screen and (min-width: 1281px) {
+  div.ani {
+    height: 5rem;
   }
 
+  @keyframes rocket {
+    0% {
+      width: 30%; 
+      left: 20vw;
+      transform: rotate(0deg);
+    }
+    25% {
+      width: 22%;
+      left: 28vw;
+      transform: rotate(90deg);
+    }
+    50% {
+      width: 30%;
+      left: 20vw;
+      transform: rotate(180deg);
+    }
+    75% {
+      width: 22%;
+      left: 28vw;
+      transform: rotate(270deg);
+    }
 
-  25% {
-  transform: rotate(90deg);
+    100% {
+      width: 30%;
+      left: 20vw;
+      transform: rotate(360deg);
+    }
   }
 
-
-  50% {
-    // top: 85%;
-    // left: 5%;
-    transform: rotate(180deg);
-  }
-
-
-  75% {
-    transform: rotate(270deg);
-  }
-
-
-  100% {
-    // top: 50%;
-    // left: 5%;
-    transform: rotate(360deg);
+  @media screen and (max-height: 700px) {
+    @keyframes rocket {
+      0% {
+        width: 30%; 
+        left: 20vw;
+        transform: rotate(0deg);
+      }
+      25% {
+        width: 10%;
+        left: 40vw;
+        transform: rotate(90deg);
+      }
+      50% {
+        width: 30%;
+        left: 20vw;
+        transform: rotate(180deg);
+      }
+      75% {
+        width: 10%;
+        left: 40vw;
+        transform: rotate(270deg);
+      }
+  
+      100% {
+        width: 30%;
+        left: 20vw;
+        transform: rotate(360deg);
+      }
+    }
   }
 }
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+
+  @media screen and (orientation: landscape) {
+    div.ani {
+      height: 5rem;
+    }
+
+    @keyframes rocket {
+      0% {
+        width: 40%; 
+        left: 11vw;
+        transform: rotate(0deg);
+      }
+      25% {
+        width: 30%;
+        left: 20vw;
+        transform: rotate(90deg);
+      }
+      50% {
+        width: 40%;
+        left: 11vw;
+        transform: rotate(180deg);
+      }
+      75% {
+        width: 30%;
+        left: 20vw;
+        transform: rotate(270deg);
+      }
+  
+      100% {
+        width: 40%;
+        left: 11vw;
+        transform: rotate(360deg);
+      }
+    }
+
+    @media screen and (max-height: 700px) {
+      @keyframes rocket {
+        0% {
+          width: 30%; 
+          left: 20vw;
+          transform: rotate(0deg);
+        }
+        25% {
+          width: 15%;
+          left: 35vw;
+          transform: rotate(90deg);
+        }
+        50% {
+          width: 30%;
+          left: 20vw;
+          transform: rotate(180deg);
+        }
+        75% {
+          width: 15%;
+          left: 35vw;
+          transform: rotate(270deg);
+        }
+    
+        100% {
+          width: 30%;
+          left: 20vw;
+          transform: rotate(360deg);
+        }
+      }
+    }
+  }
+  @media screen and (orientation: portrait) {
+    @keyframes rocket {
+      0% {
+        width: 40%; 
+        left: 11vw;
+        transform: rotate(0deg);
+      }
+      25% {
+        width: 32%;
+        left: 20vw;
+        transform: rotate(90deg);
+      }
+      50% {
+        width: 40%;
+        left: 11vw;
+        transform: rotate(180deg);
+      }
+      75% {
+        width: 32%;
+        left: 20vw;
+        transform: rotate(270deg);
+      }
+  
+      100% {
+        width: 40%;
+        left: 11vw;
+        transform: rotate(360deg);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  @media screen and (orientation: portrait) {
+    div.ani {
+      height: 5rem;
+    }
+    @keyframes rocket {
+      0% {
+        width: 45%; 
+        left: 5vw;
+        transform: rotate(0deg);
+      }
+      25% {
+        width: 55%;
+        left: -5vw;
+        transform: rotate(90deg);
+      }
+      50% {
+        width: 45%;
+        left: 5vw;
+        transform: rotate(180deg);
+      }
+      75% {
+        width: 45%;
+        left: 5vw;
+        transform: rotate(270deg);
+      }
+  
+      100% {
+        width: 45%;
+        left: 5vw;
+        transform: rotate(360deg);
+      }
+    }
+  }
+  @media screen and (orientation: landscape){
+    div.ani {
+      height: 5rem;
+      left: 5vw;
+      right: 5vw;
+    }
+    @keyframes rocket {
+      0% {
+        width: 40%; 
+        left: 5vw;
+        transform: rotate(0deg);
+      }
+      25% {
+        width: 30%;
+        left: 20vw;
+        transform: rotate(90deg);
+      }
+      50% {
+        width: 40%;
+        left: 5vw;
+        transform: rotate(180deg);
+      }
+      75% {
+        width: 30%;
+        left: 20vw;
+        transform: rotate(270deg);
+      }
+  
+      100% {
+        width: 40%;
+        left: 5vw;
+        transform: rotate(360deg);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  @media screen and (orientation: portrait) {
+    div.ani {
+      height: 5rem;
+    }
+    @keyframes rocket {
+      0% {
+        width: 45%; 
+        left: 5vw;
+        transform: rotate(0deg);
+      }
+      25% {
+        width: 55%;
+        left: -5vw;
+        transform: rotate(90deg);
+      }
+      50% {
+        width: 45%;
+        left: 5vw;
+        transform: rotate(180deg);
+      }
+      75% {
+        width: 45%;
+        left: 5vw;
+        transform: rotate(270deg);
+      }
+  
+      100% {
+        width: 45%;
+        left: 5vw;
+        transform: rotate(360deg);
+      }
+    }
+  }
+  @media screen and (orientation: landscape){
+    div.ani {
+      height: 5rem;
+    }
+    @keyframes rocket {
+      0% {
+        width: 40%; 
+        left: 10vw;
+        transform: rotate(0deg);
+      }
+      25% {
+        width: 30%;
+        left: 20vw;
+        transform: rotate(90deg);
+      }
+      50% {
+        width: 40%;
+        left: 10vw;
+        transform: rotate(180deg);
+      }
+      75% {
+        width: 30%;
+        left: 20vw;
+        transform: rotate(270deg);
+      }
+  
+      100% {
+        width: 40%;
+        left: 10vw;
+        transform: rotate(360deg);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  div.ani {
+    height: 40px;
+  }
+
+  @keyframes rocket {
+    0% {
+      width: 45%;
+      left: 5vw;
+      transform: rotate(0deg);
+    }
+
+
+    25% {
+      width: 70%;
+      left: -20vw;
+      transform: rotate(90deg);
+    }
+
+
+    50% {
+      width: 45%;
+      left: 5vw;
+      transform: rotate(180deg);
+    }
+
+
+    75% {
+      width: 45%;
+      left: 5vw;
+      transform: rotate(270deg);
+    }
+
+
+    100% {
+      width: 45%;
+      left: 5vw;
+      transform: rotate(360deg);
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  div.ani {
+    height: 40px;
+  }
+
+  @keyframes rocket {
+    0% {
+      width: 45%;
+      left: 5vw;
+      transform: rotate(0deg);
+    }
+
+
+    25% {
+      width: 70%;
+      left: -20vw;
+      transform: rotate(90deg);
+    }
+
+
+    50% {
+      width: 45%;
+      left: 5vw;
+      transform: rotate(180deg);
+    }
+
+
+    75% {
+      width: 45%;
+      left: 5vw;
+      transform: rotate(270deg);
+    }
+
+
+    100% {
+      width: 45%;
+      left: 5vw;
+      transform: rotate(360deg);
+    }
+  }
+}
+
 
 // color_change gear img
 div.color_change {
@@ -49,8 +407,6 @@ div.color_change {
     }
   }
 }
-
-
 
 @keyframes wheel {
   0% {
@@ -236,26 +592,53 @@ div.color_change {
 /* li:nth-child(4)>span animation */
 @keyframes blink {
   0% {
-    color: rgb(189, 23, 255);
+    color: rgb(255, 113, 193);
   }
 
   25% {
-    color: rgb(255, 115, 115);
+    color: rgb(190, 255, 233);
   }
 
   50% {
-    color: rgb(255, 154, 210);
+    color: rgb(255, 178, 178);
   }
 
   75% {
-    color: rgb(255, 94, 0);
+    color: rgb(113, 255, 250);
   }
 }
+
+
+[data-theme="dark"] {
+  @keyframes blink {
+    0% {
+      color: rgb(189, 23, 255);
+    }
+  
+    25% {
+      color: rgb(255, 115, 115);
+    }
+  
+    50% {
+      color: rgb(255, 154, 210);
+    }
+  
+    75% {
+      color: rgb(255, 94, 0);
+    }
+  }
+}
+
+
+
+
+
 
 /* skills part effect */
 /* someday, symbols filter will be change */
 .fe_skills > .skill_symbols ol > li {
-  &:nth-child(6) {
+  &:nth-child(6),
+  &:nth-child(7) {
     filter: invert(77%) sepia(30%) saturate(1%) hue-rotate(334deg) brightness(109%) contrast(94%);
   }
 }
@@ -267,6 +650,6 @@ div.color_change {
   }
 }
 
-.tools > .tool_symbols ul > li:nth-child(4) {
-  filter: invert(77%) sepia(30%) saturate(1%) hue-rotate(334deg) brightness(109%) contrast(94%);
-}
+// .tools > .tool_symbols ul > li:nth-child(4) {
+//   filter: invert(77%) sepia(30%) saturate(1%) hue-rotate(334deg) brightness(109%) contrast(94%);
+// }

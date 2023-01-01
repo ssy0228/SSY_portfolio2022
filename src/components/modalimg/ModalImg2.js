@@ -14,11 +14,11 @@ const ModalImg2 = () => {
 
   return (
     <div className="modal2">
-      <button type="button" className="off" onClick={modalClose} onTouchStart={modalClose} onTouchEnd={modalClose}>
+      <button type="button" className="off" onMouseDown={modalClose} onTouchStart={modalClose}>
         close
       </button>
       <div className="completionImg">
-        <img src={t("td_detail7")} className="modal_content" alt="QNET CBT certification"/>
+        <img src={process.env.PUBLIC_URL + `${t("td_detail7")}`} className="modal_content" alt="QNET CBT certification"/>
       </div>
     </div>
   );

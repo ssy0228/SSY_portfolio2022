@@ -45,16 +45,20 @@ const Mode_ChangerBtn = () => {
     setDarkmode(!Darkmode);
     document.documentElement.setAttribute('data-theme', !Darkmode ? 'light' : 'dark');
     localStorage.setItem('Darkmode', !Darkmode ? 'light' : 'dark');
-    handleActive();
+    setActive(!isActive);
   }
 
-  useEffect(() => {
-    console.log(`Darkmode? ${!Darkmode}`);
-  }, [Darkmode]);
+  // useEffect(() => {
+  //   if (document.documentElement.getAttribute('data-theme' === 'dark')) {
+  //     console.log("Darkmode? true");
+  //   } else {
+  //     console.log("Darkmode? false");
+  //   }
+  // }, [Darkmode]);
 
   return(
     <div className={`color_change ${isActive === true ? "active" : ""}`} ref={box}>
-      <button type="button" className={`gearBtn ${isActive === true ? "active": ""}`} onClick={handleActive} onTouchStart={handleActive} onTouchEnd={handleActive}>
+      <button type="button" className={`gearBtn ${isActive === true ? "active": ""}`} onMouseDown={handleActive} onTouchStart={handleActive} onTouchEnd={handleActive}>
         <span className="emoji"><img src={process.env.PUBLIC_URL + `/assets/svgs/gear-svgrepo-com.svg`} alt="gear"/></span>
       </button>
       <ul className="btns_wrap">
@@ -65,7 +69,7 @@ const Mode_ChangerBtn = () => {
         </li>
         <li>
           <button type="button" className="top" onClick={goTop} onTouchStart={goTop}>
-            <span className="emoji">🛆</span>
+            <span className="emoji">▲</span>
             <span className="font en">top</span>
           </button>
         </li>

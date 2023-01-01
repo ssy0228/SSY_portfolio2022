@@ -11,11 +11,11 @@ const Head = () => {
 
   useEffect(() => {
     window.addEventListener('scroll', (e) => {
-      if (window.innerWidth > 480) {
+      if (window.innerWidth > 530) {
         window.scrollY > 0 ? (header.current.style.width = "35vw") : (header.current.style.width = "94vw");
         window.scrollY > 0 ? (header.current.className = "head_inner small") : (header.current.className = "head_inner ");
-      } else if (window.innerWidth <= 480) { 
-        window.scrollY >= 0 && window.scrollY <= Math.abs(window.innerHeight / 3.65) ? (header.current.style.top = 0) : (header.current.style.top = ".5rem");
+      } else if (window.innerWidth <= 530) { 
+        window.scrollY >= 0 && window.scrollY <= Math.abs(window.innerHeight / 3.65) ? (header.current.style.top = 0) : (header.current.style.top = "1rem");
       }
     });
   });

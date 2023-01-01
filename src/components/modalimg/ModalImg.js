@@ -14,11 +14,11 @@ const ModalImg = () => {
 
   return (
     <div className="modal">
-      <button type="button" className="off" onClick={modalClose} onTouchStart={modalClose} onTouchEnd={modalClose}>
+      <button type="button" className="off" onMouseDown={modalClose} onTouchStart={modalClose}>
         close
       </button>
       <div className="completionImg">
-        <img src="/assets/images/Completion.png" className="modal_content" alt="completion"/>
+        <img src={ process.env.PUBLIC_URL + "/assets/images/Completion.png"} className="modal_content" alt="completion"/>
       </div>
       <div className="caption">
         <span className="which">[{t("which")}]</span>

@@ -10,6 +10,10 @@ const Greet = ({ num }) => {
   )
 }
 
+
+
+
+
 const Banner = () => {
 
   return (

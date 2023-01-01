@@ -20,10 +20,10 @@
     transform: perspective(50vw) rotateX(0deg) translateY(0vh);
     >.ban {
       width: 100%;
-      -o-transform: scale(0.8);
-      -moz-transform: scale(0.8);
-      -webkit-transform: scale(0.8);
-      transform: scale(0.8);
+      -o-transform: scale(0.8) ;
+      -moz-transform: scale(0.8) ;
+      -webkit-transform: scale(0.8) ;
+      transform: scale(0.8) ;
     }
   }
 }
@@ -54,7 +54,7 @@
   @media screen and ( max-width: 518px ) {
     .banner { 
       > .ban {
-        font-size: 4.3rem;
+        font-size: 8vmin;
       }
     }
   }
@@ -67,7 +67,7 @@
     height: 100%;
     justify-content: center;
     > .ban {
-      font-size: 3.2rem;
+      font-size: 8.5vmin;
     }
   }
 }
@@ -77,8 +77,8 @@
   .banner { 
     height: 100%;
     justify-content: center; 
-    >.ban {
-      font-size: 2.5rem;
+    > .ban {
+      font-size: 8.5vmin;
     }
   }
 }

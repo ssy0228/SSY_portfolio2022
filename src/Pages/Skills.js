@@ -49,7 +49,7 @@ const Skills = () => {
           <div className="skill_symbols">
             <ol>
               {data
-                .filter((item, index) => index < 6)
+                .filter((item, index) => index < 7)
                 .map((item, index) => {
                   return (
                     <li key={index}>
@@ -67,7 +67,7 @@ const Skills = () => {
           <div className="skill_symbols">
             <ol>
               {data
-                .filter((item, index) => index >= 6 && index < 10)
+                .filter((item, index) => index >= 7 && index < 11)
                 .map((item, index) => {
                   return (
                     <li key={index}>
@@ -88,7 +88,7 @@ const Skills = () => {
           <div className="tool_symbols">
             <ul>
               {data
-                .filter((item, index) => index >= 10 && index < 14)
+                .filter((item, index) => index >= 11 && index < 14)
                 .map((item, index) => {
                   return (
                     <li key={index}>
@@ -102,7 +102,7 @@ const Skills = () => {
           </div>
         </section>
         <section className="ctrl_tools">
-          <h3 className="skill_title en">Version Conrol</h3>
+          <h3 className="skill_title en">Version Control</h3>
           <div className="tool_symbols">
             <ul>
               {data
@@ -125,13 +125,13 @@ const Skills = () => {
             <button type="button" className="education" onClick={modal1Open} onTouchStart={modal1Open} onTouchEnd={modal1Open}>
               {t("check")}
             </button>
-            <img src="/assets/images/Completion.png" alt="Completion" className="modal_thumb" onClick={modal1Open} onTouchStart={modal1Open} onTouchEnd={modal1Open} />
+            <div className="edu_img"><img src={process.env.PUBLIC_URL + "/assets/images/Completion.png"} alt="Completion" className="modal_thumb" onClick={modal1Open} onTouchStart={modal1Open} onTouchEnd={modal1Open} /></div>
           </div>
         </section>
         <section className="certificates">
           <h3 className="skill_title en">Certification</h3>
           <div className="certified">
-            <img src={t("td_detail7")} alt="QNET CBT certification" onClick={modal2Open} onTouchStart={modal2Open} onTouchEnd={modal2Open} />
+            <div className="cert_img"><img src={process.env.PUBLIC_URL + `${t("td_detail7")}` }  alt="QNET CBT certification" onClick={modal2Open} onTouchStart={modal2Open} onTouchEnd={modal2Open} /></div>
             <span className="detail">{t("detail")}</span>
           </div>
         </section>

@@ -9,7 +9,7 @@
   top: 0;
   width: 94vw;
   right: 3vw;
-  border-radius: 30px;
+  border-radius: 15px;
   display: flex;
   height: 100%;
   overflow: hidden;
@@ -64,7 +64,7 @@ div.translate{
 
 .small {
   width: 35vw;
-  border-radius: 30px;
+  border-radius: 15px;
 }
 
 
@@ -81,7 +81,7 @@ div.translate{
       display: grid;
       width: 100%;
       height: 100%;
-      grid-template-columns: calc(100% / 5) calc(100% / 5) calc(100% / 5) calc(100% / 5) calc(100% / 5);
+      grid-template-columns:  repeat(5, 1fr);
       justify-content: space-evenly;
       align-items: center;
       > a {
@@ -108,7 +108,6 @@ div.translate{
       }
     }
   }
-
   div.translate {
     display: flex;
     position: fixed;
@@ -139,7 +138,7 @@ div.translate{
         display: grid;
         width: 100%;
         height: 100%;
-        grid-template-rows: 33% 33% 33%;
+        grid-template-rows:  repeat(3, 1fr);
         overflow: hidden;
         > li {
           display: flex;
@@ -166,10 +165,9 @@ div.translate{
   }
 
   .small {
-    border-radius: 30px;
+    border-radius: 15px;
     margin-top: 5px;
     > .gnb {
-      display: flex;
       width: 100%;
       overflow: hidden;
       > a {
@@ -181,13 +179,14 @@ div.translate{
         -webkit-transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
         -o-transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
         transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
-        > span.symbol {
-          width: 2.5rem;
-          height: 2.5rem;
-        }
-        > span.link_title {
-          text-indent: -9999px;
-          overflow: hidden;
+        >span {
+          &.symbol {
+            margin: 0 auto;
+          }
+          &.link_title {
+            text-indent: -9999px;
+            overflow: hidden;
+          }
         }
         &.bold,
         &:hover {
@@ -197,19 +196,24 @@ div.translate{
       }
     }
   }
+}
 
-  @media screen and (min-width: 951px) {
+
+
+
+@media (hover: hover) and (pointer: fine) {
+  @media screen and (min-width: 1025px) {
     .head_inner {
       width: 96vw;
-      height: 4rem;
+      height: 5rem;
       grid-template-columns: 100%;
       > .gnb {
-        height: 4rem;
+        height: 5rem;
         > a {
           display: inline-flex;
           width: 100%;
           height: 100%;
-          font-size: 1.6rem;
+          font-size: 1.4rem;
           text-indent: 5px;
           justify-content: center;
           align-items: center;
@@ -219,10 +223,9 @@ div.translate{
           -o-transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
           transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
           > span.symbol {
-            width: 2rem;
-            height: 2rem;
+            width: 1.8rem;
+            height: 1.8rem;
             border-radius: 50%;
-            margin-right: .5rem;
           }
           &.bold,
           &:hover {
@@ -233,7 +236,7 @@ div.translate{
       }
     }
     div.translate {
-      top: 5rem;
+      top: 6rem;
       width: 4rem; 
       height: 4rem;
       > button[type="button"] {
@@ -264,18 +267,114 @@ div.translate{
     }
     .small {
       width: 50vw;
-      height: 4rem;
+      height: 5rem;
       right: 3vw;
       > .gnb {
         display: flex;
         width: 100%;
-        height: 4rem;
+        height: 5rem;
+        overflow: hidden;
+        > a {
+          font-size: 1.4rem;
+          > span {
+            &.symbol {
+              width: 1.8rem;
+              height: 1.8rem;          
+            }
+            &.link_title {
+              display: none;
+              text-indent: -9999px;
+              overflow: hidden;
+            }
+          }
+          &.bold,
+          &:hover {
+            font-weight: bold;
+            transform-origin: center;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .head_inner {
+      width: 96vw;
+      height: 5rem;
+      grid-template-columns: 100%;
+      > .gnb {
+        height: 5rem;
+        > a {
+          display: inline-flex;
+          width: 100%;
+          height: 100%;
+          font-size: 1.6rem;
+          text-indent: 5px;
+          justify-content: center;
+          align-items: center;
+          background-color: none;
+          -moz-transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+          -webkit-transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+          -o-transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+          transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+          > span.symbol {
+            width: 1.8rem;
+            height: 1.8rem;
+            border-radius: 50%;
+            margin-right: .5rem;
+          }
+          &.bold,
+          &:hover {
+            font-weight: bold;
+            transform-origin: center;
+          }
+        }
+      }
+    }
+    div.translate {
+      top: 6rem;
+      width: 4rem; 
+      height: 4rem;
+      > button[type="button"] {
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        width: 3rem;
+        height: 3rem;
+      }
+      &.active {
+        height: 16rem;
+        > ul.lang {
+          padding-top: 4rem;
+          > li {
+            > button[type="button"] {
+              &.option-btn {
+                width: 3rem;
+                height: 3rem;
+              }
+              &.active,
+              &:hover {
+                  transform-origin: center;
+              }
+            }
+          }
+        }
+      }
+    }
+    .small {
+      width: 50vw;
+      height: 5rem;
+      right: 3vw;
+      > .gnb {
+        display: flex;
+        width: 100%;
+        height: 5rem;
         overflow: hidden;
         > a {
           font-size: 1.6rem;
           > span.symbol {
-            width: 2rem;
-            height: 2rem;
+            margin: 0 auto;
+            width: 1.8rem;
+            height: 1.8rem;
           }
           > span {
             &.link_title {
@@ -292,121 +391,25 @@ div.translate{
         }
       }
     }
-
-    @media screen and (min-height: 1000px) {
-      .head_inner {
-      width: 96vw;
-      height: 6rem;
-      grid-template-columns: 100%;
-      > .gnb {
-        height: 6rem;
-        > a {
-          display: inline-flex;
-          width: 100%;
-          height: 100%;
-          font-size: 1.8rem;
-          text-indent: 5px;
-          justify-content: center;
-          align-items: center;
-          background-color: none;
-          -moz-transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
-          -webkit-transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
-          -o-transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
-          transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
-          > span.symbol {
-            width: 2.5rem;
-            height: 2.5rem;
-            border-radius: 50%;
-            margin-right: .5rem;
-          }
-          &.bold,
-          &:hover {
-            font-weight: bold;
-            transform-origin: center;
-          }
-        }
-      }
-      }
-      div.translate {
-        top: 8rem;
-        width: 6rem; 
-        height: 6rem;
-        > button[type="button"] {
-          top: 5px;
-          left: 5px;
-          right: 5px;
-          width: 5rem;
-          height: 5rem;
-        }
-        &.active {
-          height: 25rem;
-          > ul.lang {
-            padding-top: 6rem;
-            > li {
-              > button[type="button"] {
-                &.option-btn {
-                  width: 5rem;
-                  height: 5rem;
-                }
-                &.active,
-                &:hover {
-                    transform-origin: center;
-                }
-              }
-            }
-          }
-        }
-      }
-      .small {
-        width: 50vw;
-        height: 6rem;
-        right: 3vw;
-        > .gnb {
-          display: flex;
-          width: 100%;
-          height: 6rem;
-          overflow: hidden;
-          > a {
-            font-size: 1.8rem;
-            > span.symbol {
-              width: 2.5rem;
-              height: 2.5rem;
-            }
-            > span {
-              &.link_title {
-                display: none;
-                text-indent: -9999px;
-                overflow: hidden;
-              }
-            }
-            &.bold,
-            &:hover {
-              font-weight: bold;
-              transform-origin: center;
-            }
-          }
-        }
-      }
-    }
   }
-
-  @media screen and (max-width: 950px) {
+  
+  @media screen and (min-width: 531px) and (max-width: 768px) {
     .head_inner {
-      height: 4rem;
+      height: 5rem;
       justify-content: space-between;
       grid-template-columns: 100%;
       > .gnb {
         width: 100%;
-        height: 4rem;
+        height: 5rem;
         > a {
           display: inline-flex;
           width: 100%;
           height: 100%;
-          font-size: 1.6rem;
+          font-size: 1.4rem;
           text-indent: 5px;
           > span.symbol {
-            width: 2rem;
-            height: 2rem;
+            width: 1.8rem;
+            height: 1.8rem;
             border-radius: 50%;
             margin-right: .5rem;
           }
@@ -419,9 +422,9 @@ div.translate{
         }
       }
     }
-
+  
     div.translate {
-      top: 5rem;
+      top: 6rem;
       right: 2.5vw;
       width: 4rem; 
       height: 4rem;
@@ -451,16 +454,16 @@ div.translate{
         }
       }
     }
-
+  
     .small {
       width: 50vw;
-      height: 4rem;
+      height: 5rem;
       border-radius: 30px;
       right: 3vw;
       > .gnb {
         display: flex;
         width: 100%;
-        height: 4rem;
+        height: 5rem;
         overflow: hidden;
         > a {
           background-color: transparent;
@@ -468,8 +471,9 @@ div.translate{
           height: 100%;
           font-size: 1.6rem;
           > span.symbol {
-            width: 2.5rem;
-            height: 2.5rem;
+            margin: 0 auto;
+            width: 1.8rem;
+            height: 1.8rem;
           }
           > span.link_title {
             text-indent: -9999px;
@@ -483,346 +487,13 @@ div.translate{
         }
       }
     }
-
-    @media screen and (orientation: portrait) and (min-height: 1000px) {
-
-      @media screen and (min-width: 769px) {
-        .head_inner {  
-          width: 96vw;
-          height: 6rem;
-          right: 2vw;
-          grid-template-columns: 100%;
-          > .gnb {
-            height: 6rem;
-            > a {
-              font-size: 1.8rem;
-              text-indent: 5px;
-              > span.symbol {
-                width: 25px;
-                height: 25px;
-              }
-            }
-          }
-          > button[type="button"].menu {
-            display: none;
-          }
-        }
-        div.translate {
-          top: 8rem;
-          right: 2vw;
-          width: 6rem; 
-          height: 6rem;
-          > button[type="button"] {
-            top: 5px;
-            left: 5px;
-            right: 5px;
-            width: 5rem;
-            height: 5rem;
-          }
-          &.active {
-            height: 25rem;
-            > ul.lang {
-              padding-top: 6rem;
-              > li {
-                > button[type="button"] {
-                  &.option-btn {
-                    width: 5rem;
-                    height: 5rem;
-                  }
-                }
-              }
-            }
-          }
-        }
-        .small {
-          width: 30vw;
-          height: 6rem;
-          border-radius: 30px;
-          right: 2vw;
-          transition: width 0.3s;
-          > .gnb {
-            display: flex;
-            width: 100%;
-            height: 6rem;
-            overflow: hidden;
-            > a {
-              font-size: 1.8rem;
-              > span.symbol {
-                width: 25px;
-                height: 25px;
-                margin: 0 auto;
-              }
-              > span.link_title {
-                display: none;
-              }
-            }
-          }
-        }
-      }
-      @media screen and (max-width: 768px) {
-        .head_inner {  
-          width: 96vw;
-          height: 6rem;
-          right: 2vw;
-          grid-template-columns: 100%;
-          > .gnb {
-            height: 6rem;
-            > a {
-              font-size: 1.8rem;
-              text-indent: 5px;
-              > span.symbol {
-                width: 25px;
-                height: 25px;
-              }
-            }
-          }
-          > button[type="button"].menu {
-            display: none;
-          }
-        }
-        div.translate {
-          top: 8rem;
-          right: 2vw;
-          width: 5rem; 
-          height: 5rem;
-          > button[type="button"] {
-            top: 5px;
-            left: 5px;
-            right: 5px;
-            width: 4rem;
-            height: 4rem;
-          }
-          &.active {
-            height: 20rem;
-            > ul.lang {
-              padding-top: 5rem;
-              > li {
-                > button[type="button"] {
-                  &.option-btn {
-                    width: 4rem;
-                    height: 4rem;
-                  }
-                }
-              }
-            }
-          }
-        }
-        .small {
-          width: 30vw;
-          height: 6rem;
-          border-radius: 30px;
-          right: 2vw;
-          transition: width 0.3s;
-          > .gnb {
-            display: flex;
-            width: 100%;
-            height: 6rem;
-            overflow: hidden;
-            > a {
-              font-size: 1.8rem;
-              > span.symbol {
-                width: 25px;
-                height: 25px;
-                margin: 0 auto;
-              }
-              > span.link_title {
-                display: none;
-              }
-            }
-          }
-        }
-      }
-    }
   }
-}
-
-@media screen and (max-width: 480px) {
-
-  .head_inner {
-    width: 92vw;
-    right: 4vw;
-    height: 4rem;
-    justify-content: space-between;
-    transition: all 0.3s;
-    > .gnb {
-      display: -moz-grid;
-      display: grid;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      grid-template-columns: calc(100% / 5) calc(100% / 5) calc(100% / 5) calc(100% / 5) calc(100% / 5);
-      justify-content: space-evenly;
-      align-items: center;
-      > a {
-        display: flex;
-        flex-flow: column wrap;
-        align-content: center;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 4rem;
-        > span.symbol {
-          width: 1.6rem;
-          height: 1.6rem;
-          border-radius: 50%;
-          margin-right: 0;
-        }
-        > span.link_title {
-          text-indent: 0;
-        }
-        &.bold,
-        &:hover {
-          font-weight: bold;
-          transform-origin: center;
-        }
-      }
-    }
-    > button[type="button"].menu {
-      position: absolute;
-      display: inline-flex;
-      align-items: center;
-      justify-content: space-evenly;
-      top: 5px;
-      right: 5px;
-      bottom: 5px;
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 3rem; 
-      height: 3rem;
-      border-radius: 50%;
-      >span.dot {
-        width: 7px;
-        height: 7px;
-        border-radius: 2px;
-      }
-    }
-  }
-
-  div.translate {
-    display: flex;
-    position: fixed;
-    top: 5rem;
-    right: 4vw;
-    border-radius: 30px;
-    width: 4rem; 
-    height: 4rem;
-    justify-content: space-between;
-    overflow: hidden;
-    transition: width 0.3s;
-    > ul.lang{
-      display: none;
-    }
-    > button[type="button"] {
-      position: absolute;
-      top: 5px;
-      right: 5px;
-      display: flex;
-      width: 3rem;
-      height: 3rem;
-      border-radius: 50%;
-      background-image: url('/assets/images/a5705a70-f0c6-4a77-b9c4-d9f66892ac52.svg');
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-    &.active {
-      width: 16rem;
-      transition: width 0.3s;
-      > ul.lang {
-        display:-moz-grid;
-        display: grid;
-        width: 100%;
-        height: 100%;
-        padding-right: 4rem;
-        grid-template-columns: 33% 33% 33%;
-        overflow: hidden;
-        > li {
-          display: flex;
-          justify-content: center;
-          width: 100%;
-          height: 100%;
-          border-radius: 15px;
-          > button[type="button"] {
-            &.option-btn {
-              display: flex;
-              justify-self: center;
-              background-color: transparent;
-              background-size: contain;
-              background-position: center;
-              width: 3rem;
-              height: 3rem;
-            }
-            &.active,
-            &:hover {
-              transform-origin: center;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .small {
-    right: 4vw;
-    width: 4rem;
-    height: 4rem;
-    overflow: hidden;
-    justify-content: space-between;
-    grid-template-columns: calc(100% - 4rem) 4rem;
-    transition: all 0.3s;
-    > .gnb {
-      display: -moz-grid;
-      display: grid;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      grid-template-columns: calc(100% / 5) calc(100% / 5) calc(100% / 5) calc(100% / 5) calc(100% / 5);
-      justify-content: space-evenly;
-      align-items: center;
-      > a {
-        display: flex;
-        flex-flow: column wrap;
-        align-content: center;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 4rem;
-        > span.symbol {
-          width: 1.6rem;
-          height: 1.6rem;
-          border-radius: 50%;
-          margin-right: 0;
-        }
-        > span.link_title {
-          text-indent: 0;
-        }
-        &.bold,
-        &:hover {
-          font-weight: bold;
-          transform-origin: center;
-        }
-      }
-    }
-    > button[type="button"].menu {
-      position: absolute;
-      top: 5px;
-      right: 5px;
-      bottom: 5px;
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 3rem; 
-      height: 3rem;
-      border-radius: 50%;
-    }
-  }
-
-  @media screen and (min-width: 321px) {
+  @media screen and (min-width: 481px) and (max-width: 530px) {
     .head_inner {
       width: 92vw;
       right: 4vw;
-      height: 4rem;
+      height: 5rem;
       justify-content: space-between;
-      grid-template-columns: calc(100% - 4rem) 4rem;
       transition: all 0.3s;
       > .gnb {
         display: -moz-grid;
@@ -834,32 +505,46 @@ div.translate{
         justify-content: space-evenly;
         align-items: center;
         > a {
+          display: flex;
+          flex-flow: column wrap;
+          align-content: center;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
           height: 4rem;
+          > span.symbol {
+            width: 1.6rem;
+            height: 1.6rem;
+            border-radius: 50%;
+            margin-right: 0;
+          }
           > span.link_title {
-            font-size: 1.6rem;
             text-indent: 0;
+          }
+          &.bold,
+          &:hover {
+            font-weight: bold;
+            transform-origin: center;
           }
         }
       }
-    }
-  }
-
-
-  @media screen and (max-width: 320px) {
-    .head_inner {
-      > .gnb {
-        overflow: hidden;
-        > a {
-          height: 100%;
-          > span.symbol {
-            width: 1.5rem;
-            height: 1.5rem;
-          }
-          > span.link_title {
-            font-size: 1.4rem;
-            height: 1.5rem;
-            line-height: 1;
-          }
+      > button[type="button"].menu {
+        position: absolute;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-evenly;
+        top: 5px;
+        right: 5px;
+        bottom: 5px;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 3rem; 
+        height: 3rem;
+        border-radius: 50%;
+        >span.dot {
+          width: 7px;
+          height: 7px;
+          border-radius: 2px;
         }
       }
     }
@@ -867,7 +552,7 @@ div.translate{
     div.translate {
       display: flex;
       position: fixed;
-      top: 5rem;
+      top: 6rem;
       right: 4vw;
       border-radius: 30px;
       width: 4rem; 
@@ -929,23 +614,967 @@ div.translate{
     }
   
     .small {
-      width: 4rem;
-      height: 4rem;
-      border-radius: 30px;
       right: 4vw;
-      transition: width 0.3s;
-      > a {
-        > span.symbol {
-          width: 1.5rem;
-          height: 1.5rem;
+      width: 4rem;
+      height: 5rem;
+      overflow: hidden;
+      justify-content: space-between;
+      grid-template-columns: calc(100% - 4rem) 4rem;
+      transition: all 0.3s;
+      > .gnb {
+        display: -moz-grid;
+        display: grid;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        grid-template-columns: calc(100% / 5) calc(100% / 5) calc(100% / 5) calc(100% / 5) calc(100% / 5);
+        justify-content: space-evenly;
+        align-items: center;
+        > a {
+          display: flex;
+          flex-flow: column wrap;
+          align-content: center;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 5rem;
+          > span.symbol {
+            width: 1.6rem;
+            height: 1.6rem;
+            border-radius: 50%;
+            margin-right: 0;
+          }
+          > span.link_title {
+            text-indent: 0;
+          }
+          &.bold,
+          &:hover {
+            font-weight: bold;
+            transform-origin: center;
+          }
         }
-        > span.link_title {
-          font-size: 1.4rem;
-          height: auto;
-          border: 1px solid red;
+      }
+    }
+  
+    @media screen and (min-width: 321px) {
+      .head_inner {
+        width: 92vw;
+        right: 4vw;
+        height: 5rem;
+        justify-content: space-between;
+        grid-template-columns: calc(100% - 4rem) 4rem;
+        transition: all 0.3s;
+        > .gnb {
+          display: -moz-grid;
+          display: grid;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          grid-template-columns: calc(100% / 5) calc(100% / 5) calc(100% / 5) calc(100% / 5) calc(100% / 5);
+          justify-content: space-evenly;
+          align-items: center;
+          > a {
+            height: 5rem;
+            > span.link_title {
+              font-size: 1.5rem;
+              text-indent: 0;
+            }
+          }
+        }
+      }
+    }
+  
+  
+    @media screen and (max-width: 320px) {
+      .head_inner {
+        > .gnb {
+          overflow: hidden;
+          > a {
+            height: 100%;
+            > span.symbol {
+              width: 1.5rem;
+              height: 1.5rem;
+            }
+            > span.link_title {
+              font-size: 1.4rem;
+              height: 1.5rem;
+              line-height: 1;
+            }
+          }
+        }
+      }
+    
+      div.translate {
+        display: flex;
+        position: fixed;
+        top: 7rem;
+        right: 4vw;
+        border-radius: 30px;
+        width: 4rem; 
+        height: 4rem;
+        justify-content: space-between;
+        overflow: hidden;
+        transition: width 0.3s;
+        > ul.lang{
+          display: none;
+        }
+        > button[type="button"] {
+          position: absolute;
+          top: 5px;
+          right: 5px;
+          display: flex;
+          width: 3rem;
+          height: 3rem;
+          border-radius: 50%;
+          background-image: url('/assets/images/a5705a70-f0c6-4a77-b9c4-d9f66892ac52.svg');
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        &.active {
+          width: 16rem;
+          transition: width 0.3s;
+          > ul.lang {
+            display:-moz-grid;
+            display: grid;
+            width: 100%;
+            height: 100%;
+            padding-right: 4rem;
+            grid-template-columns: 33% 33% 33%;
+            overflow: hidden;
+            > li {
+              display: flex;
+              justify-content: center;
+              width: 100%;
+              height: 100%;
+              border-radius: 15px;
+              > button[type="button"] {
+                &.option-btn {
+                  display: flex;
+                  justify-self: center;
+                  background-color: transparent;
+                  background-size: contain;
+                  background-position: center;
+                  width: 3rem;
+                  height: 3rem;
+                }
+                &.active,
+                &:hover {
+                  transform-origin: center;
+                }
+              }
+            }
+          }
+        }
+      }
+    
+      .small {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 30px;
+        right: 4vw;
+        transition: width 0.3s;
+        > a {
+          > span.symbol {
+            width: 1.5rem;
+            height: 1.5rem;
+          }
+          > span.link_title {
+            font-size: 1.4rem;
+            height: auto;
+            border: 1px solid red;
+          }
         }
       }
     }
   }
 }
 
+@media (hover: none) and (pointer: coarse) {
+  @media screen and (min-width: 1025px) {
+    .head_inner {
+      width: 96vw;
+      height: 5rem;
+      grid-template-columns: 100%;
+      > .gnb {
+        height: 5rem;
+        > a {
+          display: inline-flex;
+          width: 100%;
+          height: 100%;
+          font-size: 1.4rem;
+          text-indent: 5px;
+          justify-content: center;
+          align-items: center;
+          background-color: none;
+          -moz-transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+          -webkit-transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+          -o-transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+          transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+          > span.symbol {
+            width: 1.8rem;
+            height: 1.8rem;
+            border-radius: 50%;
+          }
+          &.bold,
+          &:hover {
+            font-weight: bold;
+            transform-origin: center;
+          }
+        }
+      }
+    }
+    div.translate {
+      top: 7rem;
+      width: 5rem; 
+      height: 5rem;
+      > button[type="button"] {
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        width: 4rem;
+        height: 4rem;
+      }
+      &.active {
+        height: 20rem;
+        > ul.lang {
+          padding-top: 5rem;
+          > li {
+            > button[type="button"] {
+              &.option-btn {
+                width: 4rem;
+                height: 4rem;
+              }
+              &.active,
+              &:hover {
+                  transform-origin: center;
+              }
+            }
+          }
+        }
+      }
+    }
+    .small {
+      width: 50vw;
+      height: 5rem;
+      right: 3vw;
+      > .gnb {
+        display: flex;
+        width: 100%;
+        height: 5rem;
+        overflow: hidden;
+        > a {
+          font-size: 1.4rem;
+          > span {
+            &.symbol {
+              width: 1.8rem;
+              height: 1.8rem;          
+            }
+            &.link_title {
+              display: none;
+              text-indent: -9999px;
+              overflow: hidden;
+            }
+          }
+          &.bold,
+          &:hover {
+            font-weight: bold;
+            transform-origin: center;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    @media screen and (orientation: portrait) {
+      .head_inner {
+        width: 96vw;
+        height: 5rem;
+        grid-template-columns: 100%;
+        > .gnb {
+          height: 5rem;
+          > a {
+            display: inline-flex;
+            width: 100%;
+            height: 100%;
+            font-size: 1.6rem;
+            text-indent: 5px;
+            justify-content: center;
+            align-items: center;
+            background-color: none;
+            -moz-transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+            -webkit-transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+            -o-transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+            transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+            > span.symbol {
+              width: 1.8rem;
+              height: 1.8rem;
+              border-radius: 50%;
+              margin-right: .5rem;
+            }
+            &.bold,
+            &:hover {
+              font-weight: bold;
+              transform-origin: center;
+            }
+          }
+        }
+      }
+      div.translate {
+        top: 7rem;
+        width: 5rem; 
+        height: 5rem;
+        > button[type="button"] {
+          top: 5px;
+          left: 5px;
+          right: 5px;
+          width: 4rem;
+          height: 4rem;
+        }
+        &.active {
+          height: 20rem;
+          > ul.lang {
+            padding-top: 5rem;
+            > li {
+              > button[type="button"] {
+                &.option-btn {
+                  width: 4rem;
+                  height: 4rem;
+                }
+                &.active,
+                &:hover {
+                    transform-origin: center;
+                }
+              }
+            }
+          }
+        }
+      }
+      .small {
+        width: 50vw;
+        height: 5rem;
+        right: 3vw;
+        > .gnb {
+          display: flex;
+          width: 100%;
+          height: 5rem;
+          overflow: hidden;
+          > a {
+            font-size: 1.6rem;
+            > span.symbol {
+              margin: 0 auto;
+              width: 1.8rem;
+              height: 1.8rem;
+            }
+            > span {
+              &.link_title {
+                display: none;
+                text-indent: -9999px;
+                overflow: hidden;
+              }
+            }
+            &.bold,
+            &:hover {
+              font-weight: bold;
+              transform-origin: center;
+            }
+          }
+        }
+      }
+    }
+    @media screen and (orientation: landscape) {
+      .head_inner {
+        width: 96vw;
+        height: 5rem;
+        grid-template-columns: 100%;
+        > .gnb {
+          height: 5rem;
+          > a {
+            display: inline-flex;
+            width: 100%;
+            height: 100%;
+            font-size: 1.6rem;
+            text-indent: 5px;
+            justify-content: center;
+            align-items: center;
+            background-color: none;
+            -moz-transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+            -webkit-transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+            -o-transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+            transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+            > span.symbol {
+              width: 1.8rem;
+              height: 1.8rem;
+              border-radius: 50%;
+              margin-right: .5rem;
+            }
+            &.bold,
+            &:hover {
+              font-weight: bold;
+              transform-origin: center;
+            }
+          }
+        }
+      }
+      div.translate {
+        top: 7rem;
+        width: 5rem; 
+        height: 5rem;
+        > button[type="button"] {
+          top: 5px;
+          left: 5px;
+          right: 5px;
+          width: 4rem;
+          height: 4rem;
+        }
+        &.active {
+          height: 20rem;
+          > ul.lang {
+            padding-top: 5rem;
+            > li {
+              > button[type="button"] {
+                &.option-btn {
+                  width: 4rem;
+                  height: 4rem;
+                }
+                &.active,
+                &:hover {
+                    transform-origin: center;
+                }
+              }
+            }
+          }
+        }
+      }
+      .small {
+        width: 50vw;
+        height: 5rem;
+        right: 3vw;
+        > .gnb {
+          display: flex;
+          width: 100%;
+          height: 5rem;
+          overflow: hidden;
+          > a {
+            font-size: 1.6rem;
+            > span.symbol {
+              margin: 0 auto;
+              width: 1.8rem;
+              height: 1.8rem;
+            }
+            > span {
+              &.link_title {
+                display: none;
+                text-indent: -9999px;
+                overflow: hidden;
+              }
+            }
+            &.bold,
+            &:hover {
+              font-weight: bold;
+              transform-origin: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    
+
+    @media screen and (orientation: portrait) {
+      .head_inner {
+        height: 5rem;
+        justify-content: space-between;
+        grid-template-columns: 100%;
+        > .gnb {
+          width: 100%;
+          height: 5rem;
+          > a {
+            display: inline-flex;
+            width: 100%;
+            height: 100%;
+            font-size: 1.4rem;
+            text-indent: 5px;
+            > span.symbol {
+              width: 1.8rem;
+              height: 1.8rem;
+              border-radius: 50%;
+              margin-right: .5rem;
+            }
+            
+            &.bold,
+            &:hover {
+              font-weight: bold;
+              transform-origin: center;
+            }
+          }
+        }
+      }
+    
+      div.translate {
+        top: 7rem;
+        right: 2.5vw;
+        width: 4rem; 
+        height: 4rem;
+        > button[type="button"] {
+          top: 5px;
+          left: 5px;
+          right: 5px;
+          width: 3rem;
+          height: 3rem;
+        }
+        &.active {
+          height: 16rem;
+          > ul.lang {
+            padding-top: 4rem;
+            > li {
+              > button[type="button"] {
+                &.option-btn {
+                  width: 3rem;
+                  height: 3rem;
+                }
+                &.active,
+                &:hover {
+                  transform-origin: center;
+                }
+              }
+            }
+          }
+        }
+      }
+    
+      .small {
+        width: 50vw;
+        height: 5rem;
+        border-radius: 30px;
+        right: 3vw;
+        > .gnb {
+          display: flex;
+          width: 100%;
+          height: 5rem;
+          overflow: hidden;
+          > a {
+            background-color: transparent;
+            width: 100%;
+            height: 100%;
+            font-size: 1.6rem;
+            > span.symbol {
+              margin: 0 auto;
+              width: 1.8rem;
+              height: 1.8rem;
+            }
+            > span.link_title {
+              text-indent: -9999px;
+              overflow: hidden;
+            }
+            &.bold,
+            &:hover {
+              font-weight: bold;
+              transform-origin: center;
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (orientation: landscape) {
+      .head_inner {
+        height: 5rem;
+        justify-content: space-between;
+        grid-template-columns: 100%;
+        > .gnb {
+          width: 100%;
+          height: 5rem;
+          > a {
+            display: inline-flex;
+            width: 100%;
+            height: 100%;
+            font-size: 1.4rem;
+            text-indent: 5px;
+            > span.symbol {
+              width: 1.8rem;
+              height: 1.8rem;
+              border-radius: 50%;
+              margin-right: .5rem;
+            }
+            
+            &.bold,
+            &:hover {
+              font-weight: bold;
+              transform-origin: center;
+            }
+          }
+        }
+      }
+    
+      div.translate {
+        top: 7rem;
+        right: 2.5vw;
+        width: 4rem; 
+        height: 4rem;
+        > button[type="button"] {
+          top: 5px;
+          left: 5px;
+          right: 5px;
+          width: 3rem;
+          height: 3rem;
+        }
+        &.active {
+          height: 16rem;
+          > ul.lang {
+            padding-top: 4rem;
+            > li {
+              > button[type="button"] {
+                &.option-btn {
+                  width: 3rem;
+                  height: 3rem;
+                }
+                &.active,
+                &:hover {
+                  transform-origin: center;
+                }
+              }
+            }
+          }
+        }
+      }
+    
+      .small {
+        width: 50vw;
+        height: 5rem;
+        border-radius: 30px;
+        right: 3vw;
+        > .gnb {
+          display: flex;
+          width: 100%;
+          height: 5rem;
+          overflow: hidden;
+          > a {
+            background-color: transparent;
+            width: 100%;
+            height: 100%;
+            font-size: 1.6rem;
+            > span.symbol {
+              margin: 0 auto;
+              width: 1.8rem;
+              height: 1.8rem;
+            }
+            > span.link_title {
+              text-indent: -9999px;
+              overflow: hidden;
+            }
+            &.bold,
+            &:hover {
+              font-weight: bold;
+              transform-origin: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+  
+    .head_inner {
+      width: 92vw;
+      right: 4vw;
+      height: 5rem;
+      justify-content: space-between;
+      transition: all 0.3s;
+      > .gnb {
+        display: -moz-grid;
+        display: grid;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        grid-template-columns: calc(100% / 5) calc(100% / 5) calc(100% / 5) calc(100% / 5) calc(100% / 5);
+        justify-content: space-evenly;
+        align-items: center;
+        > a {
+          display: flex;
+          flex-flow: column wrap;
+          align-content: center;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 4rem;
+          > span.symbol {
+            width: 1.6rem;
+            height: 1.6rem;
+            border-radius: 50%;
+            margin-right: 0;
+          }
+          > span.link_title {
+            text-indent: 0;
+          }
+          &.bold,
+          &:hover {
+            font-weight: bold;
+            transform-origin: center;
+          }
+        }
+      }
+      > button[type="button"].menu {
+        position: absolute;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-evenly;
+        top: 5px;
+        right: 5px;
+        bottom: 5px;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 3rem; 
+        height: 3rem;
+        border-radius: 50%;
+        >span.dot {
+          width: 7px;
+          height: 7px;
+          border-radius: 2px;
+        }
+      }
+    }
+  
+    div.translate {
+      display: flex;
+      position: fixed;
+      top: 6rem;
+      right: 4vw;
+      border-radius: 30px;
+      width: 4rem; 
+      height: 4rem;
+      justify-content: space-between;
+      overflow: hidden;
+      transition: width 0.3s;
+      > ul.lang{
+        display: none;
+      }
+      > button[type="button"] {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        display: flex;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        background-image: url('/assets/images/a5705a70-f0c6-4a77-b9c4-d9f66892ac52.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      &.active {
+        width: 16rem;
+        transition: width 0.3s;
+        > ul.lang {
+          display:-moz-grid;
+          display: grid;
+          width: 100%;
+          height: 100%;
+          padding-right: 4rem;
+          grid-template-columns: 33% 33% 33%;
+          overflow: hidden;
+          > li {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+            > button[type="button"] {
+              &.option-btn {
+                display: flex;
+                justify-self: center;
+                background-color: transparent;
+                background-size: contain;
+                background-position: center;
+                width: 3rem;
+                height: 3rem;
+              }
+              &.active,
+              &:hover {
+                transform-origin: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    .small {
+      right: 4vw;
+      width: 4rem;
+      height: 5rem;
+      overflow: hidden;
+      justify-content: space-between;
+      grid-template-columns: calc(100% - 4rem) 4rem;
+      transition: all 0.3s;
+      > .gnb {
+        display: -moz-grid;
+        display: grid;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        grid-template-columns: calc(100% / 5) calc(100% / 5) calc(100% / 5) calc(100% / 5) calc(100% / 5);
+        justify-content: space-evenly;
+        align-items: center;
+        > a {
+          display: flex;
+          flex-flow: column wrap;
+          align-content: center;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 5rem;
+          > span.symbol {
+            width: 1.6rem;
+            height: 1.6rem;
+            border-radius: 50%;
+            margin-right: 0;
+          }
+          > span.link_title {
+            text-indent: 0;
+          }
+          &.bold,
+          &:hover {
+            font-weight: bold;
+            transform-origin: center;
+          }
+        }
+      }
+    }
+  
+    @media screen and (min-width: 321px) {
+      .head_inner {
+        width: 92vw;
+        right: 4vw;
+        height: 5rem;
+        justify-content: space-between;
+        grid-template-columns: calc(100% - 4rem) 4rem;
+        transition: all 0.3s;
+        > .gnb {
+          display: -moz-grid;
+          display: grid;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          grid-template-columns: calc(100% / 5) calc(100% / 5) calc(100% / 5) calc(100% / 5) calc(100% / 5);
+          justify-content: space-evenly;
+          align-items: center;
+          > a {
+            height: 5rem;
+            > span.link_title {
+              font-size: 1.5rem;
+              text-indent: 0;
+            }
+          }
+        }
+      }
+    }
+  
+  
+    @media screen and (max-width: 320px) {
+      .head_inner {
+        > .gnb {
+          overflow: hidden;
+          > a {
+            height: 100%;
+            > span.symbol {
+              width: 1.5rem;
+              height: 1.5rem;
+            }
+            > span.link_title {
+              font-size: 1.4rem;
+              height: 1.5rem;
+              line-height: 1;
+            }
+          }
+        }
+      }
+    
+      div.translate {
+        display: flex;
+        position: fixed;
+        top: 7rem;
+        right: 4vw;
+        border-radius: 30px;
+        width: 4rem; 
+        height: 4rem;
+        justify-content: space-between;
+        overflow: hidden;
+        transition: width 0.3s;
+        > ul.lang{
+          display: none;
+        }
+        > button[type="button"] {
+          position: absolute;
+          top: 5px;
+          right: 5px;
+          display: flex;
+          width: 3rem;
+          height: 3rem;
+          border-radius: 50%;
+          background-image: url('/assets/images/a5705a70-f0c6-4a77-b9c4-d9f66892ac52.svg');
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        &.active {
+          width: 16rem;
+          transition: width 0.3s;
+          > ul.lang {
+            display:-moz-grid;
+            display: grid;
+            width: 100%;
+            height: 100%;
+            padding-right: 4rem;
+            grid-template-columns: 33% 33% 33%;
+            overflow: hidden;
+            > li {
+              display: flex;
+              justify-content: center;
+              width: 100%;
+              height: 100%;
+              border-radius: 15px;
+              > button[type="button"] {
+                &.option-btn {
+                  display: flex;
+                  justify-self: center;
+                  background-color: transparent;
+                  background-size: contain;
+                  background-position: center;
+                  width: 3rem;
+                  height: 3rem;
+                }
+                &.active,
+                &:hover {
+                  transform-origin: center;
+                }
+              }
+            }
+          }
+        }
+      }
+    
+      .small {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 30px;
+        right: 4vw;
+        transition: width 0.3s;
+        > a {
+          > span.symbol {
+            width: 1.5rem;
+            height: 1.5rem;
+          }
+          > span.link_title {
+            font-size: 1.4rem;
+            height: auto;
+            border: 1px solid red;
+          }
+        }
+      }
+    }
+  }
+}

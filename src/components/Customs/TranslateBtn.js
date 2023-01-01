@@ -23,7 +23,14 @@ const TranslateBtn = () => {
   const handleClick = (idx) => {
     translateOnclick(`${lngs[idx]}`);
     handleActive();
-    document.documentElement.setAttribute("i18next", localStorage.getItem("i18nextLng"));
+    
+    if (navigator.maxTouchPoints === 0) {
+      document.documentElement.setAttribute("lang", `${lngs[idx]}`);
+      document.documentElement.setAttribute("i18next", localStorage.getItem("i18nextLng"));
+    } else {
+      document.documentElement.setAttribute("lang", `${lngs[idx]}`);
+      document.documentElement.setAttribute("i18next", localStorage.getItem("i18nextLng"));
+    }
     if (isSelect === idx) {
       setIsSelect(!idx);
     } else {

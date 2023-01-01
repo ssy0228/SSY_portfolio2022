@@ -13,15 +13,20 @@ i18n
     debug: true,
     load: "languageOnly",
     nonExplicitSupportedLngs: true, //support language variation
-    lng: localStorage.getItem("i18nextLng") || window.navigator.language,
+    lng:
+      // ["ko", "en", "jp"]
+      // ||
+      localStorage.getItem("i18nextLng")
+      || window.navigator.languages,
     fallbackLng: {
       "ko-KR": "ko",
       "en-US": "en",
       "ja-JP": "ja",
-    } || window.navigator.languages,
+    }
+      || window.navigator.languages,
     ns: "translation",
     backend: {
-      loadPath: "/locales/{{lng}}/{{ns}}.json",
+      loadPath: process.env.PUBLIC_URL + "/locales/{{lng}}/{{ns}}.json",
     },
     keySeparator: false,
     interpolation: {
