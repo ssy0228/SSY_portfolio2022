@@ -14,7 +14,7 @@ i18n
     load: "languageOnly",
     nonExplicitSupportedLngs: true, //support language variation
     lng:
-      ["ko-KR", "ko",  "en-US", "en", "ja-JP", "ja"]
+      [ "ko",  "en", "ja"]
       ||
       localStorage.getItem("i18nextLng")
       || window.navigator.languages,
