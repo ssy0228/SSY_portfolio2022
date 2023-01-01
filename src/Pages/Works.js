@@ -150,7 +150,7 @@ const Works = () => {
                                   </span>
                                 </div>
                                 <div className="ipad">
-                                  <img src={process.env.PUBLIC_URL + `/assets/images/iPad.png`} alt="mock_ipad" />
+                                  <img src={process.env.PUBLIC_URL + `/assets/images/ipad.png`} alt="mock_ipad" />
                                   <span className="animate_ipad">
                                     <img src={process.env.PUBLIC_URL + item.src2} alt={item.alt2} />
                                   </span>
@@ -490,7 +490,7 @@ const Works = () => {
                                   </span>
                                 </div>
                                 <div className="ipad">
-                                  <img src={process.env.PUBLIC_URL + `/assets/images/iPad.png`} alt="mock_ipad" />
+                                  <img src={process.env.PUBLIC_URL + `/assets/images/ipad.png`} alt="mock_ipad" />
                                   <span className="animate_ipad">
                                     <img className="day" src={process.env.PUBLIC_URL + item.src3} alt={item.alt3} />
                                     <img className="dark" src={process.env.PUBLIC_URL + item.src4} alt={item.alt4} />
