@@ -1,0 +1,105 @@
+[
+  {
+    "id": "0",
+    "name": "html5",
+    "src": "/assets/svgs/html-svgrepo-com.svg",
+    "alt": "html5"
+  },
+  {
+    "id": "1",
+    "name": "css3",
+    "src": "/assets/svgs/css-svgrepo-com.svg",
+    "alt": "css3"
+  },
+  {
+    "id": "2",
+    "name": "vanilla_js",
+    "src": "/assets/svgs/logo-javascript.svg",
+    "alt": "vanilla_js"
+  },
+  {
+    "id": "3",
+    "name": "react_js",
+    "src": "/assets/svgs/React-icon.svg",
+    "alt": "react_js"
+  },
+  {
+    "id": "4",
+    "name": "sass",
+    "src": "/assets/svgs/sass-svgrepo-com.svg",
+    "alt": "sass"
+  },
+  {
+    "id": "5",
+    "name": "type_s",
+    "src": "/assets/svgs/typescript-svgrepo-com.svg",
+    "alt": "Typescript"
+  },
+  {
+    "id": "6",
+    "name": "graphql",
+    "src": "/assets/svgs/GraphQL_Brand_Assets/GraphQL_logo_(Rhodamine).svg",
+    "alt": "GraphQL"
+  },
+  {
+    "id": "7",
+    "name": "python",
+    "src": "/assets/svgs/python-svgrepo-com.svg",
+    "alt": "Python"
+  },
+  {
+    "id": "8",
+    "name": "golang",
+    "src": "/assets/svgs/go-svgrepo-com.svg",
+    "alt": "Golang"
+  },
+  {
+    "id": "9",
+    "name": "node_js",
+    "src": "/assets/svgs/nodejs-icon-svgrepo-com.svg",
+    "alt": "node_js"
+  },
+  {
+    "id": "10",
+    "name": "adobe_xd",
+    "src": "/assets/svgs/Adobe_XD_CC_icon.svg",
+    "alt": "AdobeXD"
+  },
+  {
+    "id": "11",
+    "name": "figma",
+    "src": "/assets/svgs/figma-svgrepo-com.svg",
+    "alt": "Figma"
+  },
+  {
+    "id": "12",
+    "name": "zeplin",
+    "src": "/assets/svgs/zeplin.svg",
+    "alt": "Zeplin"
+  },
+  {
+    "id": "13",
+    "name": "bootstrap",
+    "src": "/assets/svgs/bootstrap-svgrepo-com.svg",
+    "alt": "bootstrap"
+  },
+
+  {
+    "id": "14",
+    "name": "git_gui",
+    "src": "/assets/svgs/sourcetree-svgrepo-com.svg",
+    "alt": "Sourcetree"
+  },
+  {
+    "id": "15",
+    "name": "git",
+    "src": "/assets/svgs/Git-Icon-1788C.svg",
+    "alt": "Git"
+  },
+  {
+    "id": "16",
+    "name": "github",
+    "src": "/assets/svgs/icons8-github-48.svg",
+    "alt": "Github"
+  }
+]

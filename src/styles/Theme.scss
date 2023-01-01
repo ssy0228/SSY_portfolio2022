@@ -1,0 +1,1528 @@
+/* color ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* layout common set */
+
+#root {
+  a,h1,h2,h3,h4,button[type="button"] {
+    color: var(--link);
+  }
+
+
+  .head_inner {
+    background-color: var(--header);      
+    .gnb {
+      > a {
+        &.start {
+          border-radius: 30px 0 0 30px;
+          padding-left: 2vw;
+          > span.symbol {
+            background-image: url(../assets/images/chick.png);
+          }
+        }
+        &.second {
+          > span.symbol {
+            background-image: url(../assets/images/pigeon.png);
+          }
+        }
+      
+        &.third {
+          > span.symbol {
+            background-image: url(../assets/images/clipart544593.png);
+          }
+        }
+      
+        &.fourth {
+          > span.symbol {
+            background-image: url(../assets/images/plum.png);
+          }
+        }
+        &.fifth {
+          padding-right: 2vw;
+          border-radius: 0 30px 30px 0;
+          > span.symbol {
+            background-image: url(../assets/images/free-icon-sprout-2556889.png);
+          }
+        }
+        &.bold,
+        &:hover {
+          background-color: var(--button-active);
+          color: var(--link-focus);
+          text-shadow: var(--shadow);
+        }
+      }
+    }
+  }
+
+  div.translate {
+    background-color: var(--drawer);
+    > button[type="button"] {
+      filter: none;
+      &:hover {
+        border: var(--border);
+      }
+    }
+    button[type="button"].option-btn {
+      &.active,
+      &:hover {
+        border: var(--border-focus);
+      }
+    }
+  }
+
+
+
+  div.ani {
+    &.night {
+      display: none;
+    }
+  }
+
+  .pages {    
+    color: var(--link);
+
+  // main color
+  .banner {
+    color: var(--link);
+  }
+
+  /* sub1_color set */
+  .color_rgb {
+    color: var(--link-focus);
+  }
+
+  .pic_container {
+    > span {
+      text-shadow: var(--shadow);
+      &.pic_caption {
+        background-color: var(--info1);
+      }
+      
+      &.stack1 {
+        background-color: var(--info2);
+      }
+      
+      &.stack2 {
+        background-color: var(--info3);
+      }
+      
+      &.stack3 {
+        background-color: var(--info4);
+      }
+      &:hover {
+        background-color: var(--info-trans);
+      }
+    }
+  }
+
+  .introduce_me_list {
+    list-style-type: "🐤";
+  }
+
+  span {
+    &.key_word {
+      background-color: var(--word);
+      &::before {
+        color: var(--link-focus);
+        text-shadow: var(--shadow);
+      }
+      &:hover {
+        background-color: var(--info-trans);
+      }
+    }
+  }
+  .pic_container,
+  .introduce_me_box,
+  .key_word_box,
+  .about,
+  .fe_skills,
+  .be_skills,
+  .tools,
+  .ctrl_tools,
+  .educated,
+  .certificates {
+    background-color: var(--box);
+  }
+
+  .descript {
+    >.back {
+      background-image: url(../assets/images/computer-2557644_1920.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    >.pic_frame {
+      background-color: var(--box);
+    }
+    >.backdrop {
+      opacity: 0.8;
+      background-size: cover;
+      background-position: 0;
+      background-image: url(../assets//images/books-4530943_1920.jpg);
+    }
+    &:hover {
+      >.back {
+        background-image: url(../assets//images/books-4530943_1920.jpg);
+      }
+      >.pic_frame {
+        background-color: var(--box-focus);
+      }
+      >.backdrop {
+        background-image: url(../assets/images/computer-2557644_1920.jpg);
+      }
+    }
+  }
+  .github {
+    -webkit-filter: none;
+    filter: none;
+  }
+
+  .be_skills {
+    .notice {
+      background-color: #fff;
+    }
+  }
+
+  .about_education {
+    > button[type='button'].education {
+      background-color: var(--button);
+      color: var(--link);
+    }
+  }
+  .intro_img{
+    >img.day { display: none;}
+    >img.dark { display: flex; }
+  }
+  .intro_txt {
+    background-color: var(--box-trans);
+    >.intro_tbl {
+      background-color: var(--box-trans);
+    }
+    >.btn_wrapper {
+      > button[type="button"].explain,
+      > a.view_proj {
+          color: var(--link);
+          background-color: var(--button);
+        &.active,
+        &:hover {
+          color: var(--button-color);
+          font-weight: bold;
+          background-color: var(--button-active);
+          text-shadow: var(--shadow);
+        }
+      }
+    }
+  }
+  .pop_explain {
+    background-color: var(--popup);
+  }
+
+
+
+  // .proj_slct {
+  //   button[type="button"].slide {
+  //     -webkit-filter: none;
+  //     filter: none;
+  //   }
+  //   > button[type="button"].slide {
+  //     &.active {
+  //       -webkit-filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(123deg) brightness(106%) contrast(102%);
+  //       filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(123deg) brightness(106%) contrast(102%);
+  //     }
+  //     &:disabled {
+  //       background-color: var(--filter-gray);
+  //     }
+  //     &:first-child {
+  //       background-image: url(../images/reverse-button_25c0-fe0f.png);
+  //     }
+  //     &:last-child {
+  //       background-image: url(../images/play-button_25b6-fe0f.png);
+  //     }
+  //   }
+  // }
+
+
+
+    /* contact_color set */
+    .link_set {
+      > a {
+        > span {
+          &:hover{
+            -webkit-filter: invert(72%) sepia(93%) saturate(502%) hue-rotate(357deg) brightness(99%) contrast(105%);
+            filter: invert(72%) sepia(93%) saturate(502%) hue-rotate(357deg) brightness(99%) contrast(105%);
+          }
+        }
+      }
+    }
+
+    input {
+      &[type="text"]#from_name,
+      &[type="email"]#e-mail {
+        background-color: var(--textbox);
+        color: var(--holder-focus);
+        &::placeholder {
+          color: var(--holder);
+        }
+        &:hover {
+          background-color: var(--box-trans);
+          border: var(--border);
+        }
+        &:focus {
+          color: var(--holder-focus);
+          border: var(--border-focus);
+          background-color: var(--textbox-focus);
+        }
+      }
+      &[type="reset"]#reset,
+      &[type="submit"]#submit {
+        color: var(--link);
+        background-color: var(--button);
+        &:hover {
+          color: var(--button-color);
+          font-weight: bold;
+          background-color: var(--button-active);
+          text-shadow: var(--shadow);
+        }
+      }
+    }
+
+    textarea#message {
+      background-color: var(--textbox);
+      color: var(--holder-focus);
+      &:hover {
+        background-color: var(--box-trans);
+        border: var(--border);
+      }
+      &:focus {
+        color: var(--holder-focus);
+        border: var(--border-focus);
+        background-color: var(--textbox-focus);
+      }
+      &::placeholder {
+        color: var(--holder);
+      }
+      &::-webkit-scrollbar{
+        background-color: var(--track);
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: var(--thumb);
+      }
+    }
+
+    #footer_wrap { 
+      background-color: var(--footer);
+      > div.end_wrap {
+        >.gnb {
+          > a {
+            color: var(--link);
+            &.bold,
+            &:hover {
+              background-color: transparent;
+              color: var(--link-focus);
+              text-shadow: var(--shadow);
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  // mode_changer
+  .color_change {
+    background-color: var(--drawer);
+      > button[type="button"].gearBtn {
+        background-color: var(--button);
+        >span {
+          filter: none;
+        }
+        &.active {
+          background-color: var(--button-active);
+          text-shadow: var(--shadow);
+          >span {
+            animation: none;
+          }
+        }
+      }
+    >.btns_wrap {
+      > li {
+        &:first-of-type {
+          >button[type="button"].mode_change {
+            background-color: var(--button);
+            &::before {
+              content: "🔅";
+            }
+            &.active,
+            &:hover {
+              background-color: var(--button-active);
+              text-shadow: var(--shadow);
+            }
+          }
+        } 
+        &:last-of-type {
+          >button[type="button"].top {
+            background-color: var(--button);
+            > span{
+              color: var(--button-color);
+            }
+            &.active,
+            &:hover {
+              background-color: var(--button-active);
+              text-shadow: var(--shadow);
+            }
+          }
+        }
+      }
+    }
+  }
+  // error message
+  .error {
+    background-color: var(--bg);
+    >.err_message {
+      color: var(--link);
+    }
+  }
+    // background-image change
+}
+
+@media screen and (min-width: 951px) {
+  @media screen and (orientation: landscape) {
+    #root {
+      background-image: url(../assets/images/Gradient1.png);
+    }
+  }
+  @media screen and (orientation: portrait) {
+    #root {
+      background-image: url(../assets/images/Gradient2.png);
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  @media screen and (orientation: landscape) {
+    #root {
+      background-image: url(../assets/images/Gradient1.png);
+      
+    }
+  }
+  @media screen and (orientation: portrait) {
+    #root {
+      background-image: url(../assets/images/Gradient2.png);
+    }
+  }
+}
+
+/////LightMode//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+[data-theme="light"] {
+
+  #root {
+    a,h1,h2,h3,h4,button[type="button"] {
+      color: var(--link);
+    }
+  
+  
+    .head_inner {
+      background-color: var(--header);      
+      .gnb {
+        > a {
+          &.start {
+            border-radius: 30px 0 0 30px;
+            padding-left: 2vw;
+            > span.symbol {
+              background-image: url(../assets/images/chick.png);
+            }
+          }
+          &.second {
+            > span.symbol {
+              background-image: url(../assets/images/pigeon.png);
+            }
+          }
+        
+          &.third {
+            > span.symbol {
+              background-image: url(../assets/images/clipart544593.png);
+            }
+          }
+        
+          &.fourth {
+            > span.symbol {
+              background-image: url(../assets/images/plum.png);
+            }
+          }
+          &.fifth {
+            border-radius: 0 0 0 0;
+            padding-right: 2vw;
+            > span.symbol {
+              background-image: url(../assets/images/free-icon-sprout-2556889.png);
+            }
+          }
+          &.bold,
+          &:hover {
+            background-color: var(--button-active);
+            color: var(--link-focus);
+            text-shadow: var(--shadow);
+          }
+        }
+      }
+    }
+  
+    div.translate {
+      background-color: var(--drawer);
+      > button[type="button"] {
+        filter: none;
+        &:hover {
+          border: var(--border);
+        }
+      }
+      button[type="button"].option-btn {
+        &.active,
+        &:hover {
+          border: var(--border-focus);
+        }
+      }
+    }
+  
+  
+  
+    div.ani {
+      &.night {
+        display: none;
+      }
+    }
+  
+    .pages {    
+      color: var(--link);
+  
+    // main color
+    .banner {
+      color: var(--link);
+    }
+  
+    /* sub1_color set */
+    .color_rgb {
+      color: var(--link-focus);
+    }
+  
+    .pic_container {
+      > span {
+        text-shadow: var(--shadow);
+        &.pic_caption {
+          background-color: var(--info1);
+        }
+        
+        &.stack1 {
+          background-color: var(--info2);
+        }
+        
+        &.stack2 {
+          background-color: var(--info3);
+        }
+        
+        &.stack3 {
+          background-color: var(--info4);
+        }
+        &:hover {
+          background-color: var(--info-trans);
+        }
+      }
+    }
+  
+    .introduce_me_list {
+      list-style-type: "🐤";
+    }
+  
+    span {
+      &.key_word {
+        background-color: var(--word);
+        &::before {
+          color: var(--link-focus);
+          text-shadow: var(--shadow);
+        }
+        &:hover {
+          background-color: var(--info-trans);
+        }
+      }
+    }
+    .pic_container,
+    .introduce_me_box,
+    .key_word_box,
+    .about,
+    .fe_skills,
+    .be_skills,
+    .tools,
+    .ctrl_tools,
+    .educated,
+    .certificates {
+      background-color: var(--box);
+    }
+  
+    .descript {
+      >.back {
+        background-image: url(../assets/images/computer-2557644_1920.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+      >.pic_frame {
+        background-color: var(--box);
+      }
+      >.backdrop {
+        opacity: 0.8;
+        background-size: cover;
+        background-position: 0;
+        background-image: url(../assets//images/books-4530943_1920.jpg);
+      }
+      &:hover {
+        >.back {
+          background-image: url(../assets//images/books-4530943_1920.jpg);
+        }
+        >.pic_frame {
+          background-color: var(--box-focus);
+        }
+        >.backdrop {
+          background-image: url(../assets/images/computer-2557644_1920.jpg);
+        }
+      }
+    }
+    .github {
+      -webkit-filter: none;
+      filter: none;
+    }
+  
+    .be_skills {
+      .notice {
+        background-color: #fff;
+      }
+    }
+  
+    .about_education {
+      > button[type='button'].education {
+        background-color: var(--button);
+        color: var(--link);
+      }
+    }
+    .intro_img{
+      >img.day { display: none;}
+      >img.dark { display: flex; }
+    }
+    .intro_txt {
+      background-color: var(--box-trans);
+      >.intro_tbl {
+        background-color: var(--box-trans);
+      }
+      >.btn_wrapper {
+        > button[type="button"].explain,
+        > a.view_proj {
+            color: var(--link);
+            background-color: var(--button);
+          &.active,
+          &:hover {
+            color: var(--button-color);
+            font-weight: bold;
+            background-color: var(--button-active);
+            text-shadow: var(--shadow);
+          }
+        }
+      }
+    }
+    .pop_explain {
+      background-color: var(--popup);
+    }
+  
+  
+  
+    // .proj_slct {
+    //   button[type="button"].slide {
+    //     -webkit-filter: none;
+    //     filter: none;
+    //   }
+    //   > button[type="button"].slide {
+    //     &.active {
+    //       -webkit-filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(123deg) brightness(106%) contrast(102%);
+    //       filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(123deg) brightness(106%) contrast(102%);
+    //     }
+    //     &:disabled {
+    //       background-color: var(--filter-gray);
+    //     }
+    //     &:first-child {
+    //       background-image: url(../images/reverse-button_25c0-fe0f.png);
+    //     }
+    //     &:last-child {
+    //       background-image: url(../images/play-button_25b6-fe0f.png);
+    //     }
+    //   }
+    // }
+  
+  
+  
+      /* contact_color set */
+      .link_set {
+        > a {
+          > span {
+            &:hover{
+              -webkit-filter: invert(72%) sepia(93%) saturate(502%) hue-rotate(357deg) brightness(99%) contrast(105%);
+              filter: invert(72%) sepia(93%) saturate(502%) hue-rotate(357deg) brightness(99%) contrast(105%);
+            }
+          }
+        }
+      }
+  
+      input {
+        &[type="text"]#from_name,
+        &[type="email"]#e-mail {
+          background-color: var(--textbox);
+          color: var(--holder-focus);
+          &::placeholder {
+            color: var(--holder);
+          }
+          &:hover {
+            background-color: var(--box-transe);
+            border: var(--border);
+          }
+          &:focus {
+            color: var(--holder-focus);
+            border: var(--border-focus);
+            background-color: var(--textbox-focus);
+          }
+        }
+        &[type="reset"]#reset,
+        &[type="submit"]#submit {
+          color: var(--link);
+          background-color: var(--button);
+          &:hover {
+            color: var(--button-color);
+            font-weight: bold;
+            background-color: var(--button-active);
+            text-shadow: var(--shadow);
+          }
+        }
+      }
+  
+      textarea#message {
+        background-color: var(--textbox);
+        color: var(--holder-focus);
+        &:hover {
+          background-color: var(--box-trans);
+          border: var(--border);
+        }
+        &:focus {
+          color: var(--holder-focus);
+          border: var(--border-focus);
+          background-color: var(--textbox-focus);
+        }
+        &::placeholder {
+          color: var(--holder);
+        }
+        &::-webkit-scrollbar{
+          background-color: var(--track);
+        }
+        &::-webkit-scrollbar-thumb {
+          background-color: var(--thumb);
+        }
+      }
+  
+      #footer_wrap { 
+        background-color: var(--footer);
+        > div.end_wrap {
+          >.gnb {
+            > a {
+              color: var(--link);
+              &.bold,
+              &:hover {
+                background-color: transparent;
+                color: var(--link-focus);
+                text-shadow: var(--shadow);
+              }
+            }
+          }
+        }
+      }
+    }
+  
+  
+    // mode_changer
+    .color_change {
+      background-color: var(--drawer);
+        > button[type="button"].gearBtn {
+          background-color: var(--button-round);
+          >span {
+            filter: none;
+          }
+          &.active {
+            background-color: var(--button-round-act);
+            text-shadow: var(--shadow);
+            >span {
+              animation: none;
+            }
+          }
+        }
+      >.btns_wrap {
+        > li {
+          &:first-of-type {
+            >button[type="button"].mode_change {
+              background-color: var(--button-round);
+              &::before {
+                content: "🔅";
+              }
+              &.active,
+              &:hover {
+                background-color: var(--button-round-act);
+                text-shadow: var(--shadow);
+              }
+            }
+          } 
+          &:last-of-type {
+            >button[type="button"].top {
+              background-color: var(--button-round);
+              > span{
+                color: var(--button-color);
+              }
+              &.active,
+              &:hover {
+                background-color: var(--button-round-act);
+                text-shadow: var(--shadow);
+              }
+            }
+          }
+        }
+      }
+    }
+    // error message
+    .error {
+      background-color: var(--bg);
+      >.err_message {
+        color: var(--link);
+      }
+    }
+      // background-image change
+  }
+
+  @media screen and (min-width: 951px) {
+    @media screen and (orientation: landscape) {
+      #root {
+        background-image: url(../assets/images/Gradient1.png);
+      }
+    }
+    @media screen and (orientation: portrait) {
+      #root {
+        background-image: url(../assets/images/Gradient2.png);
+      }
+    }
+  }
+  
+  @media screen and (max-width: 950px) {
+    @media screen and (orientation: landscape) {
+      #root {
+        background-image: url(../assets/images/Gradient1.png);
+        
+      }
+    }
+    @media screen and (orientation: portrait) {
+      #root {
+        background-image: url(../assets/images/Gradient2.png);
+      }
+    }
+  }
+
+}
+
+
+////DarkMode///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+[data-theme="dark"] {
+  #root {
+    div.ani {
+      &.night {
+        display: block;
+        background: url("../assets/images/rocket_ani.png") 0 0 no-repeat;
+        background-size: contain;
+      }
+    }
+
+    .head_inner {
+      .gnb {
+        > a {
+          &.start {
+            border-radius: 30px 0 0 30px;
+            > span.symbol {
+              background-image: url(../assets/images/project.png);
+            }
+          }
+          &.second {
+            > span.symbol {
+              background-image: url(../assets/images/sun.png);
+            }
+          }
+          &.third {
+            > span.symbol {
+              background-image: url(../assets/images/moon-night-rainy.png);
+            }
+          }
+          &.fourth {
+            > span.symbol {
+              background-image: url(../assets/images/planet.png);
+            }
+          }
+          &.fifth {
+            border-radius: 0 30px 30px 0;
+            > span.symbol {
+              background-image: url(../assets/images/space-base.png);
+            }
+          }
+          &.bold,
+          &:hover {
+            background-color: var(--button-active);
+            color: var(--link-focus);
+            text-shadow: var(--shadow);
+          }
+        }
+      }      
+    }
+    div.translate {
+      background-color: var(--drawer);
+      > button[type="button"] {
+        filter: invert(100%) sepia(94%) saturate(0%) hue-rotate(248deg) brightness(106%) contrast(106%);
+      }
+      button[type="button"].option-btn {
+        &.active,
+        &:hover
+         {
+          border: var(--border-focus);
+        }
+      }
+    }
+    
+
+    .pages {
+
+      // main color
+      .banner {
+        color: var(--link);
+      }
+
+      // sub1 about me color
+      .color_rgb {
+        color: var(--link-focus);
+      }
+
+      .pic_container {
+        > span {
+          text-shadow: var(--shadow);
+          &.pic_caption {
+            background-color: var(--info1);
+          }
+          
+          &.stack1 {
+            background-color: var(--info2);
+          }
+          
+          &.stack2 {
+            background-color: var(--info3);
+          }
+          
+          &.stack3 {
+            background-color: var(--info4);
+          }
+          &:hover {
+            background-color: var(--info-trans);
+          }
+        }
+      }
+
+      .introduce_me_list {
+        list-style-type: "✨";
+      }
+
+      span {
+        &.key_word {
+          background-color: var(--word);
+          &::before {
+            color: var(--link-focus);
+            text-shadow: var(--shadow);
+          }
+          &:hover {
+            background-color: var(--info-trans);
+          }
+        }
+      }
+
+      .pic_container,
+      .introduce_me_box,
+      .key_word_box,
+      .about,
+      .fe_skills,
+      .be_skills,
+      .tools,
+      .ctrl_tools,
+      .educated,
+      .certificates {
+        background-color: var(--box);
+      }
+      .descript {
+        >.back {
+          background-image: url(../assets/images/coding-g40fb2c500_1920.jpg);
+          background-size: 350%;
+          background-position: 20% 35%;
+        }
+        >.pic_frame {
+          background-color: var(--box);
+        }
+        >.backdrop {
+          opacity: 0.8;
+          background-size: cover;
+          background-position: 0;
+          background-image: url(../assets/images/japan-4540612_1920.jpg);
+        }
+
+        &:hover {
+          >.back {
+            background-size: cover;
+            background-position: 0;
+            background-image: url(../assets/images/japan-4540612_1920.jpg);
+          }
+          >.pic_frame {
+            background-color: var(--thumb);
+          }
+          >.backdrop {
+            background-size: 350%;
+            background-position: 20% 35%;
+            background-image: url(../assets/images/coding-g40fb2c500_1920.jpg);
+          }
+        }
+      }
+      .github {
+        -webkit-filter: invert(85%) sepia(60%) saturate(100%) hue-rotate(359deg) brightness(104%) contrast(100%);
+        filter: invert(85%) sepia(60%) saturate(100%) hue-rotate(359deg) brightness(104%) contrast(100%);
+      }
+
+      .be_skills {
+        .notice {
+          background-color: var(--bg);
+        }
+      }
+      
+
+
+      // sub3 works color
+      .intro_img{
+        > img.day { display: flex; }
+        > img.dark { display: none; }
+      }
+
+      .intro_txt {
+        background-color: var(--box-trans);
+        >.intro_tbl {
+          background-color: var(--box-trans);
+        }
+        > .btn_wrapper {
+          > button[type="button"].explain,
+          > a.view_proj {
+            color: var(--link);
+            background-color: var(--button);
+            &:active,
+            &:hover {
+              color: var(--link-focus);
+              background-color: var(--button-active);
+              text-shadow: var(--shadow);
+            }
+          }
+        }
+      }
+      .pop_explain {
+        background-color: var(--popup);
+      }
+
+
+
+      // .proj_slct > button[type="button"].slide {
+      //   -webkit-filter: invert(85%) sepia(100%) saturate(100%) hue-rotate(359deg) brightness(160%) contrast(100%);
+      //   filter: invert(85%) sepia(100%) saturate(100%) hue-rotate(359deg) brightness(160%) contrast(100%);
+      //   &:active {
+      //     -webkit-filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(123deg) brightness(106%) contrast(102%);
+      //     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(123deg) brightness(106%) contrast(102%);
+      //   }
+      //   &:disabled {
+      //     background-color: var(--filter-gray);
+      //   }
+      //   &:first-child {
+      //     background-image: url(../images/reverse-button_25c0-fe0f.png);
+      //   }
+      //   &:last-child {
+      //     background-image: url(../images/play-button_25b6-fe0f.png);
+      //   }
+      // }
+
+      // sub4 contact color
+      .link_set {
+        > a {
+          > span {
+            -webkit-filter: invert(98%) sepia(4%) saturate(681%) hue-rotate(279deg) brightness(118%) contrast(100%);
+            filter: invert(98%) sepia(4%) saturate(681%) hue-rotate(279deg) brightness(118%) contrast(100%);
+            &:hover {
+            -webkit-filter: invert(95%) sepia(70%) saturate(666%) hue-rotate(329deg) brightness(109%) contrast(101%);
+            filter: invert(95%) sepia(70%) saturate(666%) hue-rotate(329deg) brightness(109%) contrast(101%);          
+            }
+          }
+        }
+      }
+
+      .copyright {
+        color: var(--link);
+      }
+
+      input {
+        &[type="text"]#from_name,
+        &[type="email"]#e-mail {
+          border: var(--border);
+          background-color: var(--textbox);
+          color: var(--link);
+          &:hover {
+            background-color: var(--box-trans);
+          }
+          &::placeholder {
+            color: var(--holder);
+          }
+          &:focus {
+            color: var(--holder-focus);
+            border: var(--border-focus);
+            background-color: var(--textbox-focus);
+          }
+        }
+        &[type="reset"]#reset,
+        &[type="submit"]#submit {
+          color: var(--link);
+          background-color: var(--button);
+          &.active,
+          &:hover {
+            color: var(--link-focus);
+            font-weight: bold;
+            background-color: var(--button-active);
+            text-shadow: var(--shadow);
+          }
+        }
+      }
+
+      textarea#message {
+        border: var(--border);
+        background-color: var(--textbox);
+        color: var(--link);
+        &:hover {
+          background-color: var(--box-trans);
+        }
+        &::placeholder {
+          color: var(--holder);
+        }
+        &:focus {
+          color: var(--holder-focus);
+          border: var(--border-focus);
+          background-color: var(--textbox-focus);
+        }
+        &::-webkit-scrollbar-track{
+          background-color: var(--track);
+        }
+        &::-webkit-scrollbar-thumb {
+          background-color: var(--thumb);
+        }
+      }
+      #footer_wrap { 
+        background-color: var(--footer);
+        >div.end_wrap {
+          >.gnb {
+            > button[type="button"] {
+              color: var(--link);
+              &.bold,
+              &:hover {
+                background-color: transparent;
+                color: var(--link-active);
+                text-shadow: var(--shadow);
+              }
+            } 
+          }
+        }
+      }
+    }
+
+    
+    .color_change {
+      > button[type="button"].gearBtn {
+        > span {
+          filter: invert(100%) sepia(94%) saturate(0%) hue-rotate(248deg) brightness(106%) contrast(106%);
+        }
+      }
+      >.btns_wrap {
+        >li{
+          &:first-of-type {
+            > button[type="button"].mode_change {
+              &::before {
+                content: "🌙";
+              }
+              &.active,
+              &:hover {
+                text-shadow: var(--shadow);
+              }
+            }
+          }
+          &:last-of-type {
+            >button[type="button"].top {
+              > span {
+                color: var(--button-color);
+              }
+              &.active,
+              &:hover {
+                text-shadow: var(--shadow);
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+    // error
+    .error {
+      background-color: var(--bg);
+      > .err_message {
+        color: var(--link);
+      }
+    }
+  }
+
+
+  // #root {
+  
+   
+  
+  //   .pages {    
+  //     color: var(--link);
+  
+  //   // main color
+  //   .banner {
+  //     color: var(--link);
+  //   }
+  
+  //   /* sub1_color set */
+  //   .color_rgb {
+  //     color: var(--link-focus);
+  //   }
+  
+  //   .pic_container {
+  //     > span {
+  //       text-shadow: var(--shadow);
+  //       &.pic_caption {
+  //         background-color: var(--info1);
+  //       }
+        
+  //       &.stack1 {
+  //         background-color: var(--info2);
+  //       }
+        
+  //       &.stack2 {
+  //         background-color: var(--info3);
+  //       }
+        
+  //       &.stack3 {
+  //         background-color: var(--info4);
+  //       }
+  //       &:hover {
+  //         background-color: var(--info-trans);
+  //       }
+  //     }
+  //   }
+  
+  //   .introduce_me_list {
+  //     list-style-type: "🐤";
+  //   }
+  
+  //   span {
+  //     &.key_word {
+  //       background-color: var(--word);
+  //       &::before {
+  //         color: var(--link-focus);
+  //         text-shadow: var(--shadow);
+  //       }
+  //       &:hover {
+  //         background-color: var(--info-trans);
+  //       }
+  //     }
+  //   }
+  //   .pic_container,
+  //   .introduce_me_box,
+  //   .key_word_box,
+  //   .about,
+  //   .fe_skills,
+  //   .be_skills,
+  //   .tools,
+  //   .ctrl_tools,
+  //   .educated,
+  //   .certificates {
+  //     background-color: var(--box);
+  //   }
+  
+  //   .descript {
+  //     >.back {
+  //       background-image: url(../assets/images/computer-2557644_1920.jpg);
+  //       background-size: cover;
+  //       background-position: center;
+  //     }
+  //     >.pic_frame {
+  //       background-color: var(--box);
+  //     }
+  //     >.backdrop {
+  //       opacity: 0.8;
+  //       background-size: cover;
+  //       background-position: 0;
+  //       background-image: url(../assets//images/books-4530943_1920.jpg);
+  //     }
+  //     &:hover {
+  //       >.back {
+  //         background-image: url(../assets//images/books-4530943_1920.jpg);
+  //       }
+  //       >.pic_frame {
+  //         background-color: var(--box-focus);
+  //       }
+  //       >.backdrop {
+  //         background-image: url(../assets/images/computer-2557644_1920.jpg);
+  //       }
+  //     }
+  //   }
+  //   .github {
+  //     -webkit-filter: none;
+  //     filter: none;
+  //   }
+  
+  //   .be_skills {
+  //     .notice {
+  //       background-color: #fff;
+  //     }
+  //   }
+  
+  //   .about_education {
+  //     > button[type='button'].education {
+  //       background-color: var(--button);
+  //       color: var(--link);
+  //     }
+  //   }
+  //   .intro_img{
+  //     >img.day { display: none;}
+  //     >img.dark { display: flex; }
+  //   }
+  //   .intro_txt {
+  //     background-color: var(--box-trans);
+  //     >.intro_tbl {
+  //       background-color: var(--box-trans);
+  //     }
+  //     >.btn_wrapper {
+  //       > button[type="button"].explain,
+  //       > a.view_proj {
+  //           color: var(--link);
+  //           background-color: var(--button);
+  //         &.active,
+  //         &:hover {
+  //           color: var(--button-color);
+  //           font-weight: bold;
+  //           background-color: var(--button-active);
+  //           text-shadow: var(--shadow);
+  //         }
+  //       }
+  //     }
+  //   }
+  //   .pop_explain {
+  //     background-color: var(--popup);
+  //   }
+  
+  
+  
+  //   // .proj_slct {
+  //   //   button[type="button"].slide {
+  //   //     -webkit-filter: none;
+  //   //     filter: none;
+  //   //   }
+  //   //   > button[type="button"].slide {
+  //   //     &.active {
+  //   //       -webkit-filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(123deg) brightness(106%) contrast(102%);
+  //   //       filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(123deg) brightness(106%) contrast(102%);
+  //   //     }
+  //   //     &:disabled {
+  //   //       background-color: var(--filter-gray);
+  //   //     }
+  //   //     &:first-child {
+  //   //       background-image: url(../images/reverse-button_25c0-fe0f.png);
+  //   //     }
+  //   //     &:last-child {
+  //   //       background-image: url(../images/play-button_25b6-fe0f.png);
+  //   //     }
+  //   //   }
+  //   // }
+  
+  
+  
+  //     /* contact_color set */
+  //     .link_set {
+  //       > a {
+  //         > span {
+  //           &:hover{
+  //             -webkit-filter: invert(72%) sepia(93%) saturate(502%) hue-rotate(357deg) brightness(99%) contrast(105%);
+  //             filter: invert(72%) sepia(93%) saturate(502%) hue-rotate(357deg) brightness(99%) contrast(105%);
+  //           }
+  //         }
+  //       }
+  //     }
+  
+  //     input {
+  //       &[type="text"]#from_name,
+  //       &[type="email"]#e-mail {
+  //         background-color: var(--textbox);
+  //         color: var(--holder-focus);
+  //         &::placeholder {
+  //           color: var(--holder);
+  //         }
+  //         &:hover {
+  //           background-color: var(--box);
+  //           border: var(--border);
+  //         }
+  //         &:focus {
+  //           color: var(--holder-focus);
+  //           border: var(--border-focus);
+  //           background-color: var(--textbox-focus);
+  //         }
+  //       }
+  //       &[type="reset"]#reset,
+  //       &[type="submit"]#submit {
+  //         color: var(--link);
+  //         background-color: var(--button);
+  //         &:hover {
+  //           color: var(--button-color);
+  //           font-weight: bold;
+  //           background-color: var(--button-active);
+  //           text-shadow: var(--shadow);
+  //         }
+  //       }
+  //     }
+  
+  //     textarea#message {
+  //       background-color: var(--textbox);
+  //       color: var(--holder-focus);
+  //       &:hover {
+  //         background-color: var(--box);
+  //         border: var(--border);
+  //       }
+  //       &:focus {
+  //         color: var(--holder-focus);
+  //         border: var(--border-focus);
+  //         background-color: var(--textbox-focus);
+  //       }
+  //       &::placeholder {
+  //         color: var(--holder);
+  //       }
+  //       &::-webkit-scrollbar{
+  //         background-color: var(--track);
+  //       }
+  //       &::-webkit-scrollbar-thumb {
+  //         background-color: var(--thumb);
+  //       }
+  //     }
+  
+  //     #footer_wrap { 
+  //       background-color: var(--footer);
+  //       > div.end_wrap {
+  //         >.gnb {
+  //           > a {
+  //             color: var(--link);
+  //             &.bold,
+  //             &:hover {
+  //               background-color: transparent;
+  //               color: var(--link-focus);
+  //               text-shadow: var(--shadow);
+  //             }
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  
+  
+  //   // mode_changer
+  //   .color_change {
+  //     background-color: var(--drawer);
+  //       > button[type="button"].gearBtn {
+  //         background-color: var(--button);
+  //         >span {
+  //           filter: none;
+  //         }
+  //         &.active {
+  //           background-color: var(--button-active);
+  //           text-shadow: var(--shadow);
+  //           >span {
+  //             animation: none;
+  //           }
+  //         }
+  //       }
+  //     >.btns_wrap {
+  //       > li {
+  //         &:first-of-type {
+  //           >button[type="button"].mode_change {
+  //             background-color: var(--button);
+  //             &::before {
+  //               content: "🔅";
+  //             }
+  //             &.active,
+  //             &:hover {
+  //               background-color: var(--button-active);
+  //               text-shadow: var(--shadow);
+  //             }
+  //           }
+  //         } 
+  //         &:last-of-type {
+  //           >button[type="button"].top {
+  //             background-color: var(--button);
+  //             > span{
+  //               color: var(--button-color);
+  //             }
+  //             &.active,
+  //             &:hover {
+  //               background-color: var(--button-active);
+  //               text-shadow: var(--shadow);
+  //             }
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  //   // error message
+  //   .error {
+  //     background-color: var(--bg);
+  //     >.err_message {
+  //       color: var(--link);
+  //     }
+  //   }
+  //     // background-image change
+  // }
+
+
+
+
+
+  @media screen and (min-width: 951px) {
+    @media screen and (orientation: landscape) {
+      #root {
+        background-image: url(../assets/images/galaxy-8k-j6-1920x1080.jpg);
+      }
+    }
+    @media screen and (orientation: portrait) {
+      #root {
+        background-image: url(../assets/images/Night-Background-long.png);
+      }
+    }
+  }
+
+  @media screen and (max-width: 950px) {
+    @media screen and (orientation: landscape) {
+      #root {
+        background-image: url(../assets/images/galaxy-8k-j6-1920x1080.jpg);
+      }
+    }
+    @media screen and (orientation: portrait) {
+      #root {
+        background-image: url(../assets/images/Night-Background-long.png);
+      }
+    }
+  }
+}

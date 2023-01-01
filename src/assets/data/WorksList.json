@@ -1,0 +1,68 @@
+[
+  {
+    "id":"1",
+    "src1": "/assets/images/samsungem.png",
+    "src2": "/assets/images/samsungem.png",
+    "alt1": "samsungem_1",
+    "alt2": "samsungem_2",
+    "skill1": "html5",
+    "skill2": "css3",
+    "skill3": "jQuery/JS",
+    "href": "https://ssy0228.github.io/samsungem"
+  },
+  {
+    "id":"2",
+    "src1": "/assets/images/locknlock.png",
+    "src2": "/assets/images/locknlock.png",
+    "alt1": "locknlock_1",
+    "alt2": "locknlock_2",
+    "skill1": "html5",
+    "skill2": "css3",
+    "skill3": "JS",
+    "href": "https://ssy0228.github.io/locknlock"
+  },
+  {
+    "id":"3",
+    "src1":"/assets/images/vanilla_todo.jpeg", 
+    "src2": "/assets/images/vanilla_todo.jpeg",
+    "alt1": "todolist_1",
+    "alt2": "todolist_2",
+    "skill1": "html5",
+    "skill2": "css3",
+    "skill3": "JS",
+    "href": "https://ssy0228.github.io/todaydosomething"
+  },
+  {
+    "id":"4",
+    "src1": "/assets/images/kakao.png",
+    "src2": "/assets/images/kakao.png",
+    "alt1": "kakaoTalkReact",
+    "alt2": "kakaoTalkReact",
+    "skill1": "html5",
+    "skill2": "SCSS/SASS",
+    "skill3": "React.js",
+    "href": "https://ssy0228.github.io/kakao_2022_react"
+  },
+  {
+    "id":"5",
+    "src1": "#",
+    "src2": "#",
+    "alt1": "#",
+    "alt2": "#",
+    "skill1": "Secret",
+    "skill2": "Secret",
+    "skill3": "Secret",
+    "href": "#"
+  },
+  {
+    "id":"6",
+    "src1": "/assets/images/portfolio.png",
+    "src2": "/assets/images/dark_mode.png",
+    "alt1": "portfolio_light",
+    "alt2": "portfolio_dark",
+    "skill1": "html5",
+    "skill2": "SCSS/SASS",
+    "skill3": "React.js",
+    "href": "https://ssy0228.github.io/ssy_portfolio2022"
+  }
+]

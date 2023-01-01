@@ -1,0 +1,66 @@
+/* cursor pointer for mouse */
+
+/* mode + pointer custom */
+
+/* common */
+
+// all pages common call
+
+
+@media screen and (max-width: 489px) {
+  .pointer {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .pointer2 {
+    background-image: url(../../assets/images/50-505835_feather-hd-png-images-pluspng-transparent-background.png);
+    position: fixed;
+    width: 30px;
+    height: 40px;
+    pointer-events: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1000;
+    -webkit-transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+    -o-transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+    -moz-transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  
+    &.hover {
+      width: 35px;
+      height: 45px;
+      background-size: contain;
+    }
+  
+    &.click {
+      width: 33px;
+      height: 43px;
+    }
+  }
+}
+
+
+  
+/* system default + pointer */
+
+  [data-theme='light'] .pointer2 {
+    background-image: url(../../assets/images/50-505835_feather-hd-png-images-pluspng-transparent-background.png);
+  }
+  
+  [data-theme='dark'] .pointer2 {
+    background-image: url(../../assets/images/Saturn_web_pointer.png);
+  }
+  
+  /* system dark + pointer */
+  
+  @media screen and (prefers-color-scheme: dark) {
+    .pointer2 {
+      background-image: url(../../assets/images/Saturn_web_pointer.png);
+    }
+  }
+
+
+
+

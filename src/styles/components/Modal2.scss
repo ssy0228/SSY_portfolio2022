@@ -1,0 +1,167 @@
+div.modal2 {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden !important;
+  z-index: 10;
+  background-color: rgb(4, 4, 4);
+  background-color: rgba(0, 0, 0, 0.9);
+  &.open {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    > button[type="button"].off {
+      position: absolute;
+      top: 15vh;
+      width: 30px;
+      height: 30px;
+      -o-transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+      -moz-transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+      -webkit-transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+      transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+      &:hover {
+        width: 35px;
+        height: 35px;
+        background-color: transparent;
+      }
+    }
+
+    > div.completionImg {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}
+
+
+
+@media screen and (min-width: 481px) {
+
+  @media screen and (min-width: 951px) and (max-width: 1024px) {
+    div.modal2 {
+      &.open {
+        flex-flow: row wrap;
+        padding: 20vh 10vw;
+        > button[type="button"].off {
+          right: 10vw;
+        }
+        >div.completionImg {
+          > img {
+            transform: scale(0.8);
+          }
+        }
+      }
+    }
+  }
+
+
+  @media screen and (min-width: 769px) and (max-width: 950px) {
+    div.modal2 {
+      &.open {
+        flex-flow: row wrap;
+        padding: 20vh 10vw 20vh;
+        > button[type="button"].off {
+          right: 10vw; 
+        }
+        >div.completionImg {
+          > img {
+            transform: scale(0.7);
+          }
+        }
+      }
+    }
+  }
+
+  
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+  
+    div.modal2 {
+      &.open {
+        padding: 20vh 8vw 20vh;
+        flex-flow: column wrap;
+        > button[type="button"].off {
+          right: 8vw;
+        }
+        >div.completionImg {
+          > img {
+            transform: scale(0.6);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+
+  @media screen and (min-height: 501px) {
+    div.modal2 {
+      &.open {
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        > button[type="button"].off {
+          right: 10vw;
+        }
+        >div.completionImg {
+          > img {
+            transform: scale(0.6);
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 320px) {
+      div.modal2 {
+        &.open {
+          padding: 20vh 4vw 10vh;
+          > button[type="button"].off {
+            top: 7rem;
+            right: 8vw;
+          }
+          >div.completionImg {
+            > img {
+              transform: scale(0.4);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-height: 500px) {
+    div.modal2 {
+      &.open {
+       display: none;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 320px) {
+
+  div.modal2 {
+    &.open {
+      flex-flow: column wrap;
+      justify-content: space-evenly;
+      > button[type="button"].off {
+        top: 5rem;
+        right: 10vw;
+      }
+      >div.completionImg {
+
+        > img {
+          transform: scale(0.5);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,272 @@
+
+
+
+// darkmode only
+div.ani {
+  background-position: right bottom;
+  animation: rocket infinite 5s ease-in 0s;
+  transform-origin: right center;
+}
+
+
+@keyframes rocket {
+  0% {
+    // top: 50%;
+    // left: 5%;
+    transform: rotate(0deg);
+  }
+
+
+  25% {
+  transform: rotate(90deg);
+  }
+
+
+  50% {
+    // top: 85%;
+    // left: 5%;
+    transform: rotate(180deg);
+  }
+
+
+  75% {
+    transform: rotate(270deg);
+  }
+
+
+  100% {
+    // top: 50%;
+    // left: 5%;
+    transform: rotate(360deg);
+  }
+}
+
+// color_change gear img
+div.color_change {
+  >button[type="button"].gearBtn {
+    > span {
+      animation: wheel infinite 0.5s linear;
+    }
+  }
+}
+
+
+
+@keyframes wheel {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  } 
+  50% {
+    transform: rotate(180deg);
+  }
+  75%{
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+// banner effect
+.banner {
+  -o-animation: portraitor 2s linear 0s 1;
+  -moz-animation: portraitor 2s linear 0s 1;
+  -webkit-animation: portraitor 2s linear 0s 1;
+  animation: portraitor 2s linear 0s 1;
+
+  >.ban {
+    &.greet1 {
+      -o-animation: starwars 2s ease-in-out 0s 1;
+      -moz-animation: starwars 2s ease-in-out 0s 1;
+      -webkit-animation: starwars 2s ease-in-out 0s 1;
+      animation: starwars 2s ease-in-out 0s 1;
+    }
+    &.greet2 {
+      -o-animation: starwars 2s ease-in-out 0.5s 1;
+      -moz-animation: starwars 2s ease-in-out 0.5s 1;
+      -webkit-animation: starwars 2s ease-in-out 0.5s 1;
+      animation: starwars 2s ease-in-out 0.5s 1;
+    }
+    &.greet3 {
+      -o-animation: starwars 2s ease-in-out 1s 1;
+      -moz-animation: starwars 2s ease-in-out 1s 1;
+      -webkit-animation: starwars 2s ease-in-out 1s 1;
+      animation: starwars 2s ease-in-out 1s 1;
+    }
+    &.greet4 {
+      -o-animation: starwars 2s ease-in-out 1.5s 1;
+      -moz-animation: starwars 2s ease-in-out 1.5s 1;
+      -webkit-animation: starwars 2s ease-in-out 1.5s 1;
+      animation: starwars 2s ease-in-out 1.5s 1;
+    }
+  }
+}
+
+
+// effect
+@keyframes portraitor {
+  from {
+    -o-transform: perspective(20vw) rotateX(70deg) scale(1.5) translateY(50vh);
+    -moz-transform: perspective(20vw) rotateX(70deg) scale(1.5) translateY(50vh);
+    -webkit-transform: perspective(20vw) rotateX(70deg) scale(1.5) translateY(50vh);
+    transform: perspective(20vw) rotateX(70deg) scale(1.5) translateY(50vh);
+  }
+  to {
+    -o-transform: perspective(20vw) rotateX(0deg) scale(0.9) translateY(0vh);
+    -moz-transform: perspective(20vw) rotateX(0deg) scale(0.9) translateY(0vh);
+    -webkit-transform: perspective(20vw) rotateX(0deg) scale(0.9) translateY(0vh);
+    transform: perspective(20vw) rotateX(0deg) scale(0.9) translateY(0vh);
+  }
+}
+
+@keyframes starwars {
+  from {
+    opacity: 0;
+    -o-transform: scale(10);
+    -moz-transform: scale(10);
+    -webkit-transform: scale(10);
+    transform: scale(10);
+  }
+  to {
+    opacity: 1;
+    -o-transform: scale(0.8) ;
+    -moz-transform: scale(0.8) ;
+    -webkit-transform: scale(0.8) ;
+    transform: scale(0.8) ;
+  }
+}
+
+
+/* #about_me effect */
+.descript {
+  >.back {
+    -o-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+    -o-transform-origin: center;
+    -moz-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -o-transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), background-image 1s cubic-bezier(0.19, 1, 0.22, 1);
+    -moz-transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), background-image 1s cubic-bezier(0.19, 1, 0.22, 1);
+    -webkit-transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), background-image 1s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), background-image 1s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  > .pic_frame {
+    -o-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+    -o-transform-origin: center;
+    -moz-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -o-transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+    -moz-transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+    -webkit-transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  >.backdrop {
+    -o-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+    -o-transform-origin: center;
+    -moz-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -o-transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), background-image 1s cubic-bezier(0.19, 1, 0.22, 1);
+    -moz-transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), background-image 1s cubic-bezier(0.19, 1, 0.22, 1);
+    -webkit-transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), background-image 1s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), background-image 1s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  &:hover,
+  &:active {
+    >.back {
+      -o-transform: rotate(10deg);
+      -moz-transform: rotate(10deg);
+      -webkit-transform: rotate(10deg);
+      transform: rotate(10deg);
+      -o-transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), background-image 1s cubic-bezier(0.19, 1, 0.22, 1);
+      -moz-transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), background-image 1s cubic-bezier(0.19, 1, 0.22, 1);
+      -webkit-transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), background-image 1s cubic-bezier(0.19, 1, 0.22, 1);
+      transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), background-image 1s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    >.pic_frame {
+      -o-transform: rotate(-15deg);
+      -moz-transform: rotate(-15deg);
+      -webkit-transform: rotate(-15deg);
+      transform: rotate(-15deg);
+      -o-transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+      -moz-transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+      -webkit-transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+      transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    >.backdrop {
+      -o-transform: rotate(10deg);
+      -moz-transform: rotate(10deg);
+      -webkit-transform: rotate(10deg);
+      transform: rotate(10deg);
+      -o-transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), background-image 1s cubic-bezier(0.19, 1, 0.22, 1);
+      -moz-transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), background-image 1s cubic-bezier(0.19, 1, 0.22, 1);
+      -webkit-transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), background-image 1s cubic-bezier(0.19, 1, 0.22, 1);
+      transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), background-image 1s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+  }
+}
+
+
+.introduce_me_list > li:nth-child(1) > span {
+  -o-animation: blink infinite 1s ease-in-out 0s;
+  -moz-animation: blink infinite 1s ease-in-out 0s;
+  -webkit-animation: blink infinite 1s ease-in-out 0s;
+  animation: blink infinite 1s ease-in-out 0s;
+}
+
+
+/* li:nth-child(4)>span animation */
+@keyframes blink {
+  0% {
+    color: rgb(189, 23, 255);
+  }
+
+  25% {
+    color: rgb(255, 115, 115);
+  }
+
+  50% {
+    color: rgb(255, 154, 210);
+  }
+
+  75% {
+    color: rgb(255, 94, 0);
+  }
+}
+
+/* skills part effect */
+/* someday, symbols filter will be change */
+.fe_skills > .skill_symbols ol > li {
+  &:nth-child(6) {
+    filter: invert(77%) sepia(30%) saturate(1%) hue-rotate(334deg) brightness(109%) contrast(94%);
+  }
+}
+
+
+.be_skills > .skill_symbols ol > li {
+  &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+    filter: invert(77%) sepia(30%) saturate(1%) hue-rotate(334deg) brightness(109%) contrast(94%);
+  }
+}
+
+.tools > .tool_symbols ul > li:nth-child(4) {
+  filter: invert(77%) sepia(30%) saturate(1%) hue-rotate(334deg) brightness(109%) contrast(94%);
+}

@@ -1,0 +1,86 @@
+/* layout.css */
+/* color set >> light_mode.css / dark_mode.css */
+
+/* background-color: rgb(5, 0, 51);  */
+
+/* common */
+
+.sector {
+  width: 100%;
+  height: 100%;
+  >.banner {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    text-align: center;
+    transform-origin: bottom;
+    -o-transform: perspective(50vw) rotateX(0deg) translateY(0vh);
+    -moz-transform: perspective(50vw) rotateX(0deg) translateY(0vh);
+    -webkit-transform: perspective(50vw) rotateX(0deg) translateY(0vh);
+    transform: perspective(50vw) rotateX(0deg) translateY(0vh);
+    >.ban {
+      width: 100%;
+      -o-transform: scale(0.8);
+      -moz-transform: scale(0.8);
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8);
+    }
+  }
+}
+
+
+@media screen and (min-width: 769px) {
+  .banner {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 100%;
+    >.ban {
+      font-size: 5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .banner { 
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 100%; 
+    > .ban {
+      font-size: 4.5rem;
+    }
+  }
+  @media screen and ( max-width: 518px ) {
+    .banner { 
+      > .ban {
+        font-size: 4.3rem;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  .banner { 
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    > .ban {
+      font-size: 3.2rem;
+    }
+  }
+}
+
+
+@media screen and (max-width: 320px) {
+  .banner { 
+    height: 100%;
+    justify-content: center; 
+    >.ban {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+

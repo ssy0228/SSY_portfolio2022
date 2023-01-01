@@ -1,0 +1,1450 @@
+/* footer */
+/* layout.css */
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 8k
+*/
+
+#contact {
+  > div.contact_box {
+    position: relative;
+    display: flex;
+    >.sendmail_form,
+    >.final_greet {
+      display: flex;
+      flex-flow: column wrap;
+    }
+
+    > .sendmail_form {
+      > form {
+        width: 100%;
+        height: 100%;
+        > fieldset {
+          display: flex;
+          width: 100%;
+          height: 100%;
+          flex-flow: column wrap;
+          align-content: center;
+          input,
+          textarea {
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            pointer-events: auto;
+            cursor: none;
+            appearance: none;
+          }
+            input {
+              &[type="text"]#from_name,
+              &[type="email"]#e-mail {
+                font-size: 1.4rem;
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                &::placeholder {
+                  font-family: 'Red Hat Display', sans-serif;
+                }
+              }
+            }
+            textarea#message {
+              width: 100%;
+              height: 40%;
+              resize: none;
+              overflow-y: auto;
+              font-size: 1.4rem;
+              &::placeholder {
+                font-family: 'Red Hat Display', sans-serif;
+              }
+              &::-webkit-scrollbar {
+                height: 100%;
+                appearance: none;
+              }
+              &::-webkit-scrollbar-track{
+                border-radius: 5px;
+              }
+              &::-webkit-scrollbar-thumb {
+                width: 100%;
+                height: auto;
+                border-radius: 5px;
+              }
+            }
+            >.btns {
+              display: flex;
+              justify-content: space-between;
+              width: 100%;
+              > input {
+                width: 40%;
+                background-color: transparent;                
+                font-family: "Red Hat Display", sans-serif;
+              }
+            }
+          }
+      }
+    }
+    > .final_greet {
+      > .thanks {
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+        line-height: 1.5;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      > .link_set {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        > a {
+          display: flex;
+          flex-flow: column wrap;
+          justify-content: center;
+          > span {
+            &.ico {
+              display: flex;
+              width: 100%;
+              height: 100%;
+              justify-content: center;
+              -o-transition: filter 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+              -moz-transition: filter 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+              -webkit-transition: filter 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+              transition: filter 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+              > img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+            &.label {
+              display: none;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 481px) {
+  #contact {
+    > div.contact_box {
+      justify-content: space-between;
+      >.final_greet {
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 30%;
+        > .thanks {
+          width: 100%;
+          font-size: 2rem;
+          >.final_thanks {
+            text-align: center;
+            font-size: 1.8rem;
+          } 
+        }
+        > .link_set {
+          height: 4rem;
+        }
+      }
+      >.sendmail_form {
+        width: 100%;
+        height: 70%;
+        > form {
+          > fieldset {
+            padding: 0;
+            justify-content: space-between;
+            input {
+              &[type="text"]#from_name,
+              &[type="email"]#e-mail {
+                height: 6vh;
+              } 
+            }
+            textarea#message {
+              height: 50%;
+              &::-webkit-scrollbar {
+                width: 5px;
+              }
+            }
+            > .btns {
+              height: 6vh;
+            }
+          }
+        }
+      }   
+    }
+  }
+
+  @media screen and (min-width: 951px) {
+    #contact {
+      > div.contact_box {
+        flex-flow: row nowrap;    
+        > .sendmail_form {
+            width: 50%;
+            height: 100%;
+          > form {
+            padding-right: 2.5vw;
+            > fieldset {
+              justify-content: space-evenly;
+              textarea#message {
+                height: 40%;
+                &::-webkit-scrollbar {
+                  height: 100%;
+                  appearance: none;
+                }
+                &::-webkit-scrollbar-track{
+                  width: 3px;
+                  border-radius: 5px;
+                }
+                &::-webkit-scrollbar-thumb {
+                  width: 100%;
+                  height: auto;
+                  border-radius: 5px;
+                }
+              }
+    
+              .btns {
+                display: flex;
+                > input {
+                  width: 40%;
+                }
+              }
+            }
+          }
+        }
+        > .final_greet {
+          flex-flow: column wrap;
+          width: 50%;
+          height: 100%;
+          justify-content: center;
+          > .thanks {
+            display: flex;
+            flex-flow: column wrap;
+            width: 100%;
+            height: 40%;
+            line-height: 1.5;
+            justify-content: space-evenly;
+            align-items: center;
+          }
+        }
+      }
+    }
+    
+    @media screen and (min-width: 1025px) {
+      #contact {
+        /* contact */
+        > div.contact_box {
+          > .sendmail_form {
+            > form {
+              padding-right: 2.5vw;
+              > fieldset {
+                input {
+                  &[type="text"]#from_name,
+                  &[type="email"]#e-mail {
+                    height: 6vh;
+                    padding: 2rem;
+                    &::placeholder {
+                      font-size: 1.5rem;
+                    }
+                  }
+                }
+                textarea#message {
+                  height: 40%;
+                  padding: 2rem;
+                  &::placeholder {
+                    font-size: 1.5rem;
+                  }
+                  &::-webkit-scrollbar {
+                    width: 10px;
+                    height: 100%;
+                    appearance: none;
+                  }
+                  &::-webkit-scrollbar-track{
+                    width: 3px;
+                    border-radius: 5px;
+                  }
+                  &::-webkit-scrollbar-thumb {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 5px;
+                  }
+                }
+                .btns {
+                  display: flex;
+                  height: 6vh;
+                  > input {
+                    width: 40%;
+                    font-size: 1.6rem;
+                    background-color: transparent;
+                  }
+                }
+              }
+            }
+          }
+          >.final_greet {
+            > .thanks {
+              width: 100%;
+              height: 40%;
+              font-size: 2rem;
+              >.final_thanks {
+                font-size: 1.8rem;
+              }
+            }
+            > .link_set {
+              > a {
+                width: 4rem;
+                height: 4rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 1024px) {
+      #contact {
+        /* contact */
+        >.contact_box {
+          >.final_greet {
+            > .thanks {
+              width: 100%;
+              height: 40%;
+              font-size: 2rem;
+              > .final_thanks {
+                font-size: 1.8rem;
+              }
+            }
+            > .link_set {
+              > a {
+                width: 4rem;
+                height: 4rem;
+              }
+            }
+          }
+          > .sendmail_form {
+            > form {
+              > fieldset {
+                input {
+                  &[type="text"]#from_name,
+                  &[type="email"]#e-mail {
+                    height: 6vh;
+                    padding: 2rem;
+                    &::placeholder {
+                      font-size: 1.5rem;
+                    }
+                  }
+                }
+                textarea#message {
+                  height: 40%;
+                  padding: 2rem;
+                  &::-webkit-scrollbar {
+                    width: 5px;
+                  }
+                  &::placeholder {
+                    font-size: 1.5rem;
+                  }
+                }
+                .btns {
+                  height: 6vh;
+                  > input {
+                    font-size: 1.6rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      [i18next="ja"] {
+        #contact {
+          > div.contact_box {
+            >.final_greet {
+              > .thanks {
+                >.final_thanks {
+                  width: 27rem; 
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    @media screen and (orientation: portrait) and (min-height: 1000px) {
+      #contact {
+        > div.contact_box {
+          flex-flow: column-reverse wrap; 
+          align-items: center;
+          >.final_greet {
+            width: 100%;
+            height: 30%;
+            justify-content: space-evenly;
+            > .thanks {
+              width: 100%;
+              font-size: 2rem;
+              >.final_thanks {
+                width: 100%;
+                font-size: 1.6rem;
+              } 
+            }
+            > .link_set {
+              width: 100%;
+              height: 4rem;
+              > a {
+                width: 25%;
+                height: 4rem;
+              }
+            }
+          }
+          >.sendmail_form {
+            width: 70%;
+            height: 70%;
+            > form {
+              padding: 0; 
+              > fieldset {
+                padding: 0;
+                justify-content: space-between;
+                input {
+                  &[type="text"]#from_name,
+                  &[type="email"]#e-mail {
+                    height: 4rem;
+                    font-size: 1.6rem;
+                    padding: 2rem;
+                    &::placeholder {
+                      font-size: 1.5rem;
+                    }
+                  } 
+                }
+                textarea#message {
+                  height: 50%;
+                  padding: 2rem;
+                  font-size: 1.8rem;
+                  &::-webkit-scrollbar {
+                    width: 5px;
+                  }
+                  &::placeholder {
+                    font-size: 1.5rem;
+                  }
+                }
+                > .btns {
+                  height: 4rem;
+                  > input {
+                    font-size: 1.6rem;
+                  }
+                }
+              }
+            }
+          }   
+        }
+      }
+      [i18next="ja"] {
+        #contact {
+          > div.contact_box {
+            >.final_greet {
+              > .thanks {
+                >.final_thanks {
+                  width: 100%; 
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (orientation: landscape) and (min-height: 1000px) and (min-width: 1025px) {
+      
+    }
+  }
+  
+  @media screen and (max-width: 950px) {
+    #contact {
+      > div.contact_box {
+        flex-flow: row wrap; 
+        >.final_greet {
+          flex-flow: column wrap;
+          justify-content: center;
+          width: 50%;
+          height: 100%;
+          > .thanks {
+            display: flex;
+            flex-flow: column wrap;
+            width: 100%;
+            height: 40%;
+            line-height: 1.5;
+            justify-content: space-evenly;
+            align-items: center;
+            font-size: 2rem;
+            > .final_thanks {
+              font-size: 1.8rem;
+            }
+          }
+          > .link_set {
+            > a {
+              width: 4rem;
+              height: 4rem;
+            }
+          }
+        }
+        >.sendmail_form {
+          width: 50%;
+          height: 100%;
+          > form {
+            > fieldset {
+              padding: 0;
+              justify-content: space-evenly;
+              input {
+                &[type="text"]#from_name,
+                &[type="email"]#e-mail {
+                  height: 6vh;
+                  padding: 2rem; 
+                  &::placeholder {
+                    font-size: 1.5rem;
+                  }
+                } 
+              }
+              textarea#message {
+                height: 40%;
+                padding: 2rem;
+                &::-webkit-scrollbar {
+                  width: 5px;
+                }
+                &::placeholder {
+                  font-size: 1.5rem;
+                }
+              }
+              > .btns {
+                height: 6vh;
+                >input {
+                  font-size: 1.6rem; 
+                }
+              }
+            }
+          }
+        }   
+      }
+    }
+
+
+    @media screen and (max-width: 800px) {
+      #contact {
+        > div.contact_box {
+          flex-flow: column-reverse wrap; 
+          >.final_greet {
+            flex-flow: column wrap;
+            justify-content: space-evenly;
+            width: 100%;
+            height: 30%;
+            > .thanks {
+              width: 100%;
+              font-size: 2rem;
+              height: 50%;
+              line-height: 1;
+              >.final_thanks {
+                text-align: center;
+                font-size: 1.8rem;
+              } 
+            }
+            > .link_set {
+              height: 4rem;
+              > a {
+                width: 4rem;
+                height: 100%;
+              }
+            }
+          }
+          >.sendmail_form {
+            margin: 0 auto;
+            width: 70%;
+            height: 70%;
+            > form {
+              > fieldset {
+                padding: 0;
+                justify-content: space-evenly;
+                input {
+                  &[type="text"]#from_name,
+                  &[type="email"]#e-mail {
+                    height: 4rem;
+                    padding: 2rem; 
+                    &::placeholder {
+                      font-size: 1.5rem;
+                    }
+                  } 
+                }
+                textarea#message {
+                  height: 50%;
+                  padding: 2rem;
+                  &::-webkit-scrollbar {
+                    width: 5px;
+                  }
+                  &::placeholder {
+                    font-size: 1.5rem;
+                  }
+                }
+                > .btns {
+                  height: 4rem;
+                  >input {
+                    font-size: 1.6rem; 
+                  }
+                }
+              }
+            }
+          }   
+        }
+      }
+
+
+
+      @media screen and (orientation: landscape) and (max-height: 720px) {
+        #contact {
+          > div.contact_box {
+            flex-flow: row wrap; 
+            >.final_greet {
+              flex-flow: column wrap;
+              justify-content: center;
+              width: 50%;
+              height: 100%;
+              > .thanks {
+                width: 100%;
+                font-size: 1.8rem;
+                height: 40%;
+                line-height: 1;
+                >.final_thanks {
+                  text-align: center;
+                  font-size: 1.6rem;
+                } 
+              }
+              > .link_set {
+                height: 4rem;
+                > a {
+                  width: 4rem;
+                  height: 100%;
+                }
+              }
+            }
+            >.sendmail_form {
+              width: 50%;
+              height: 100%;
+              > form {
+                > fieldset {
+                  padding: 0;
+                  justify-content: space-evenly;
+                  input {
+                    &[type="text"]#from_name,
+                    &[type="email"]#e-mail {
+                      height: 4.5rem;
+                      padding: 1rem; 
+                      &::placeholder {
+                        font-size: 1.5rem;
+                      }
+                    } 
+                  }
+                  textarea#message {
+                    height: 40%;
+                    padding: 1rem;
+                    &::-webkit-scrollbar {
+                      width: 5px;
+                    }
+                    &::placeholder {
+                      font-size: 1.5rem;
+                    }
+                  }
+                  > .btns {
+                    height: 3.8rem;
+                    >input {
+                      font-size: 1.6rem; 
+                    }
+                  }
+                }
+              }
+            }   
+          }
+        }
+        [i18next ="ja"] {
+          #contact {
+            > div.contact_box {
+              >.final_greet {
+                > .thanks {
+                  >.final_thanks {
+                    width: 80%;
+                    text-align: center;
+                    font-size: 1.6rem;
+                  } 
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (orientation: portrait) and (min-height: 1000px) {
+      @media screen and (min-width: 769px) {
+        #contact {
+          > div.contact_box {
+            flex-flow: column-reverse wrap; 
+            align-items: center;
+            >.final_greet {
+              width: 100%;
+              height: 30%;
+              justify-content: space-evenly;
+              > .thanks {
+                width: 100%;
+                font-size: 2rem;
+                >.final_thanks {
+                  width: 100%;
+                  font-size: 1.6rem;
+                } 
+              }
+              > .link_set {
+                width: 100%;
+                height: 4rem;
+                > a {
+                  width: 25%;
+                  height: 4rem;
+                }
+              }
+            }
+            >.sendmail_form {
+              width: 70%;
+              height: 70%;
+              > form {
+                padding: 0; 
+                > fieldset {
+                  padding: 0;
+                  justify-content: space-between;
+                  input {
+                    &[type="text"]#from_name,
+                    &[type="email"]#e-mail {
+                      height: 4rem;
+                      font-size: 1.6rem;
+                      padding: 2rem;
+                      &::placeholder {
+                        font-size: 1.5rem;
+                      }
+                    } 
+                  }
+                  textarea#message {
+                    height: 50%;
+                    padding: 2rem;
+                    font-size: 1.8rem;
+                    &::-webkit-scrollbar {
+                      width: 5px;
+                    }
+                    &::placeholder {
+                      font-size: 1.5rem;
+                    }
+                  }
+                  > .btns {
+                    height: 4rem;
+                    > input {
+                      font-size: 1.6rem;
+                    }
+                  }
+                }
+              }
+            }   
+          }
+        }
+        [i18next="ja"] {
+          #contact {
+            > div.contact_box {
+              >.final_greet {
+                > .thanks {
+                  >.final_thanks {
+                    width: 100%; 
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      @media screen and (max-width: 768px) {
+        #contact {
+          > div.contact_box {
+            flex-flow: column-reverse wrap; 
+            align-items: center;
+            >.final_greet {
+              width: 100%;
+              height: 30%;
+              justify-content: space-evenly;
+              > .thanks {
+                width: 100%;
+                font-size: 2rem;
+                >.final_thanks {
+                  width: 100%;
+                  font-size: 1.6rem;
+                } 
+              }
+              > .link_set {
+                width: 100%;
+                height: 4rem;
+                > a {
+                  width: 25%;
+                  height: 4rem;
+                }
+              }
+            }
+            >.sendmail_form {
+              width: 70%;
+              height: 70%;
+              > form {
+                padding: 0; 
+                > fieldset {
+                  padding: 0;
+                  justify-content: space-between;
+                  input {
+                    &[type="text"]#from_name,
+                    &[type="email"]#e-mail {
+                      height: 4rem;
+                      font-size: 1.6rem;
+                      padding: 2rem;
+                      &::placeholder {
+                        font-size: 1.5rem;
+                      }
+                    } 
+                  }
+                  textarea#message {
+                    height: 50%;
+                    padding: 2rem;
+                    font-size: 1.8rem;
+                    &::-webkit-scrollbar {
+                      width: 5px;
+                    }
+                    &::placeholder {
+                      font-size: 1.5rem;
+                    }
+                  }
+                  > .btns {
+                    height: 4rem;
+                    > input {
+                      font-size: 1.6rem;
+                    }
+                  }
+                }
+              }
+            }   
+          }
+        }
+        [i18next="ja"] {
+          #contact {
+            > div.contact_box {
+              >.final_greet {
+                > .thanks {
+                  >.final_thanks {
+                    width: 100%; 
+                  }
+                }
+              }
+            }
+          }
+        }
+      } 
+    }
+  }
+
+  @media screen and (orientation: portrait) and (max-height: 720px) {
+    #contact {
+      > div.contact_box {
+        flex-flow: column-reverse wrap; 
+        >.final_greet {
+          flex-flow: column wrap;
+          justify-content: space-evenly;
+          width: 100%;
+          height: 30%;
+          > .thanks {
+            width: 100%;
+            font-size: 1.8rem;
+            height: 50%;
+            line-height: 1;
+            >.final_thanks {
+              text-align: center;
+              font-size: 1.6rem;
+            } 
+          }
+          > .link_set {
+            height: 3rem;
+            > a {
+              width: 3rem;
+              height: 100%;
+            }
+          }
+        }
+        >.sendmail_form {
+          margin: 0 auto;
+          width: 70%;
+          height: 70%;
+          > form {
+            > fieldset {
+              padding: 0;
+              justify-content: space-between;
+              input {
+                &[type="text"]#from_name,
+                &[type="email"]#e-mail {
+                  height: 3rem;
+                  padding: 1rem; 
+                  &::placeholder {
+                    font-size: 1.5rem;
+                  }
+                } 
+              }
+              textarea#message {
+                height: 40%;
+                padding: 1rem;
+                &::-webkit-scrollbar {
+                  width: 5px;
+                }
+                &::placeholder {
+                  font-size: 1.5rem;
+                }
+              }
+              > .btns {
+                height: 3rem;
+                >input {
+                  font-size: 1.6rem; 
+                }
+              }
+            }
+          }
+        }   
+      }
+    }
+  }
+
+  @media screen and (orientation: landscape) and (max-height: 540px) {
+    #contact {
+      > div.contact_box {
+        height: 100%;
+        flex-flow: row wrap; 
+        >.final_greet {
+          flex-flow: column wrap;
+          justify-content: center;
+          width: 50%;
+          height: 100%;
+          > .thanks {
+            width: 100%;
+            font-size: 1.8rem;
+            height: 40%;
+            line-height: 1;
+            >.final_thanks {
+              text-align: center;
+              font-size: 1.6rem;
+            } 
+          }
+          > .link_set {
+            height: 4rem;
+            > a {
+              width: 4rem;
+              height: 100%;
+            }
+          }
+        }
+        >.sendmail_form {
+          width: 50%;
+          height: 100%;
+          > form {
+            > fieldset {
+              padding: 0;
+              justify-content: space-evenly;
+              input {
+                &[type="text"]#from_name,
+                &[type="email"]#e-mail {
+                  height: 3rem;
+                  padding: 1rem; 
+                  &::placeholder {
+                    font-size: 1.5rem;
+                  }
+                } 
+              }
+              textarea#message {
+                height: 45%;
+                padding: 1rem;
+                &::-webkit-scrollbar {
+                  width: 5px;
+                }
+                &::placeholder {
+                  font-size: 1.5rem;
+                }
+              }
+              > .btns {
+                height: 3rem;
+                >input {
+                  font-size: 1.6rem; 
+                }
+              }
+            }
+          }
+        }   
+      }
+    }
+    [i18next ="ja"] {
+      #contact {
+        > div.contact_box {
+          >.final_greet {
+            > .thanks {
+              >.final_thanks {
+                width: 80%;
+                text-align: center;
+                font-size: 1.6rem;
+              } 
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+// max-width: 480px
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  #contact {
+    > div.contact_box {
+      flex-flow: column-reverse wrap; 
+      justify-content: space-between;
+      >.final_greet {
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 30%;
+        > .thanks {
+          width: 100%;
+          >.final_thanks {
+            text-align: center;
+          } 
+        }
+        >.link_set {
+          >a {
+            width: 25%;
+          }
+        }
+      }
+      >.sendmail_form {
+        width: 100%;
+        height: 70%;
+        > form {
+          > fieldset {
+            padding: 0;
+            justify-content: space-between;
+          }
+        }
+      }   
+    }
+  }
+  @media screen and (min-height: 741px) {
+    #contact {
+      > div.contact_box {
+        >.final_greet {
+          > .thanks {
+            font-size: 2rem;
+            >.final_thanks {
+              font-size: 1.6rem;
+            } 
+          }
+          > .link_set {
+            height: 3.5rem;
+            > a {
+              width: 25%;
+            }
+          }
+        }
+        >.sendmail_form {
+          > form {
+            > fieldset {
+              input {
+                &[type="text"]#from_name,
+                &[type="email"]#e-mail {
+                  height: 4rem;
+                  padding: 1rem;
+                  &::placeholder {
+                    font-size: 1.5rem;
+                  }
+                } 
+              }
+              textarea#message {
+                height: 45%;
+                padding: 1rem;
+                &::-webkit-scrollbar {
+                  width: 5px;
+                }
+                &::placeholder {
+                  font-size: 1.5rem;
+                }
+              }
+              > .btns {
+                height: 4rem;
+                >input {
+                  font-size: 1.6rem;
+                }
+              }
+            }
+          }
+        }   
+      }
+    }
+    [i18next = "en"] {
+      #contact {
+        > div.contact_box {
+          >.final_greet {
+            > .thanks {
+              >.final_thanks {
+                width: 80%;
+              } 
+            }
+          }
+        }
+      }
+    }
+    [i18next = "ja"] {
+      #contact {
+        > div.contact_box {
+          >.final_greet {
+            > .thanks {
+              >.final_thanks {
+                width: 65%;
+              } 
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-height: 641px) and (max-height: 740px) {
+    #contact {
+      > div.contact_box {
+        >.final_greet {
+          flex-wrap: nowrap;
+          > .thanks {
+            font-size: 1.8rem;
+            >.final_thanks {
+              font-size: 1.6rem;
+              width: 90%;
+            }
+          }
+          > .link_set {
+            height: 3.5rem;
+            > a {
+              height: 100%;
+            }
+          }
+        }
+        >.sendmail_form {
+          > form {
+            > fieldset {
+              input {
+                &[type="text"]#from_name,
+                &[type="email"]#e-mail {
+                  height: 3.5rem;
+                  padding: 1rem;
+                  border-radius: 5px;
+                } 
+              }
+              textarea#message {
+                height: 50%;
+                padding: 1rem;
+                border-radius: 5px;
+                &::-webkit-scrollbar {
+                  width: 5px;
+                }
+              }
+              > .btns {
+                height: 3.5rem;
+                > input{
+                  border-radius: 5px;
+                  font-size: 1.5rem;
+                }
+              }
+            }
+          }
+        }   
+      }
+    }
+    [i18next = "ja"] {
+      #contact {
+        > div.contact_box {
+          >.final_greet {
+            > .thanks {
+              >.final_thanks {
+                width: 70%;
+              }
+            }
+          } 
+        }
+      }
+    }    
+  }
+  @media screen and (min-height: 501px) and (max-height: 640px) {
+    #contact {
+      > div.contact_box {
+        row-gap: 2rem;
+        >.final_greet {
+          height: 35%;
+          flex-wrap: nowrap;
+          row-gap: 1rem;
+          > .thanks {
+            line-height: 1.5;
+            font-size: 1.8rem;
+            >.final_thanks {
+              font-size: 1.6rem;
+            }
+          }
+          > .link_set {
+            height: 3.5rem;
+            > a {
+              height: 100%;
+            };
+          }
+        }
+        >.sendmail_form {
+          height: 65%;
+          > form {
+            > fieldset {
+              row-gap: 2rem;
+              input {
+                &[type="text"]#from_name,
+                &[type="email"]#e-mail {
+                  height: 4rem;
+                  padding: 1rem;
+                  border-radius: 5px;
+                  font-size: 1.4rem;
+                } 
+              }
+              textarea#message {
+                height: auto;
+                padding: 1rem;
+                border-radius: 5px;
+                font-size: 1.4rem;
+                &::-webkit-scrollbar {
+                  width: 5px;
+                }
+              }
+              > .btns {
+                height: 4rem;
+                > input{
+                  font-size: 1.4rem;
+                  border-radius: 10px;
+                }
+              }
+            }
+          }
+        }   
+      }
+    }
+    [i18next = "en"] {
+      #contact {
+        > div.contact_box {
+          >.final_greet {
+            > .thanks {
+              >.final_thanks {
+                width: 90%;
+              }
+            }
+          } 
+        }
+      }
+    }   
+    [i18next = "ja"] {
+      #contact {
+        > div.contact_box {
+          >.final_greet {
+            > .thanks {
+              >.final_thanks {
+                width: 70%;
+              }
+            }
+          } 
+        }
+      }
+    }   
+  }
+
+
+  // keypad active >> android  일단은
+  @media screen and (max-height: 500px) {
+    #contact {
+      > div.contact_box {
+        row-gap: 2rem;
+        >.final_greet {
+          height: 35%;
+          flex-wrap: nowrap;
+          row-gap: 1rem;
+          > .thanks {
+            line-height: 1.5;
+            font-size: 1.8rem;
+            >.final_thanks {
+              font-size: 1.6rem;
+            }
+          }
+          > .link_set {
+            height: 3.5rem;
+            > a {
+              height: 100%;
+            };
+          }
+        }
+        >.sendmail_form {
+          height: 65%;
+          > form {
+            > fieldset {
+              row-gap: 2rem;
+              input {
+                &[type="text"]#from_name,
+                &[type="email"]#e-mail {
+                  height: 4rem;
+                  padding: 1rem;
+                  border-radius: 5px;
+                  font-size: 1.4rem;
+                } 
+              }
+              textarea#message {
+                height: auto;
+                padding: 1rem;
+                border-radius: 5px;
+                font-size: 1.4rem;
+                &::-webkit-scrollbar {
+                  width: 5px;
+                }
+              }
+              > .btns {
+                height: 4rem;
+                > input{
+                  font-size: 1.4rem;
+                  border-radius: 10px;
+                }
+              }
+            }
+          }
+        }   
+      }
+    }
+    [i18next = "en"] {
+      #contact {
+        > div.contact_box {
+          >.final_greet {
+            > .thanks {
+              >.final_thanks {
+                width: 90%;
+              }
+            }
+          } 
+        }
+      }
+    }   
+    [i18next = "ja"] {
+      #contact {
+        > div.contact_box {
+          >.final_greet {
+            > .thanks {
+              >.final_thanks {
+                width: 70%;
+              }
+            }
+          } 
+        }
+      }
+    }   
+  }
+}
+
+
+
+
+// part finish
+@media screen and (max-width: 320px) {
+
+  #contact {
+    > div.contact_box {
+      flex-flow: column-reverse wrap; 
+      justify-content: space-between;
+      >.final_greet {
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 30%;
+          > .thanks {
+            width: 100%;
+            font-size: 1.6rem;
+            >.final_thanks {
+              text-align: center;
+              font-size: 1.4rem;
+              width: 100%;
+            } 
+          }
+          > .link_set {
+            height: 3rem;
+            > a {
+              width: 25%;
+            }
+          }
+      }
+      >.sendmail_form {
+        width: 100%;
+        height: 70%;
+        > form {
+          > fieldset {
+            padding: 0;
+            justify-content: space-between;
+            input {
+              &[type="text"]#from_name,
+              &[type="email"]#e-mail {
+                height: 4rem;
+                padding: 1rem;
+                border-radius: 10px;
+              } 
+            }
+            textarea#message {
+              height: 50%;
+              padding: 1rem;
+              border-radius: 10px;
+              &::-webkit-scrollbar {
+                width: 5px;
+              }
+            }
+            > .btns {
+              height: 3rem;
+              > input {
+                font-size: 1.6rem;
+                border-radius: 10px;
+              }
+            }
+          }
+        }
+      }   
+    }
+  }
+
+  [i18next = "en"] {
+    #contact {
+      > div.contact_box {
+        >.final_greet {
+            > .thanks {
+              >.final_thanks {
+                width: 100%;
+                font-size: 1.4rem;
+            } 
+          }
+        }
+      }
+    }
+  }
+
+  [i18next = "ja"] {
+    #contact {
+      > div.contact_box {
+        >.final_greet {
+            > .thanks {
+              >.final_thanks {
+                width: 85%;
+                font-size: 1.5rem;
+            } 
+          }
+        }
+      }
+    }
+  }
+}

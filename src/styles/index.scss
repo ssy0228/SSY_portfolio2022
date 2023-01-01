@@ -1,0 +1,237 @@
+@charset "utf-8";
+
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	cursor: none;
+  touch-action: manipulation;
+}
+
+
+:root {
+  --bg: rgb(162, 231, 210);
+  --bg-trans : rgba(255, 255, 255, 0.338);
+  --link : rgb(34, 0, 62);
+  --link-focus : rgb(255, 227, 43);
+  --word : rgba(186, 255, 212, 0.9);
+  --info1 : rgb(0, 193, 87);
+  --info2: rgba(0, 200, 140, 0.722);
+  --info3 : rgba(36, 235, 59, 0.901);
+  --info4: rgb(96, 216, 66);
+  --info-trans :rgba(0, 176, 67, 0.742);
+  --box: rgb(78, 183, 134);
+  --box-trans : rgba(255, 255, 255, 0.4);
+  --box-focus: rgb(0, 188, 103);
+  --popup : rgb(119, 195, 133);
+  --textbox: rgba(196, 255, 236, 0.708);
+  --textbox-focus : rgba(176, 253, 184, 0.641);
+  --drawer : rgb(56, 206, 106);
+  --border: 1px solid rgb(38, 198, 9);
+  --border-focus: 3px solid rgb(221, 255, 53);
+  --holder: rgb(0, 175, 56);
+  --holder-focus : rgb(0, 93, 6);
+  --button : rgb(142, 220, 175);
+  --button-color: rgb(255, 185, 34);
+  --button-active: rgba(0, 154, 105, 0.934);
+  --button-round : rgba(200, 255, 204, 0.656);
+  --button-round-act: rgb(0, 172, 11);
+  --track : rgba(199, 255, 184, 0.561);
+  --thumb : rgb(0, 126, 4);
+  --shadow: rgba(21, 0, 42, 0.996) 0 0.06rem .2rem;
+  --header: rgb(0, 198, 126);
+  --footer: rgba(113, 202, 135, 0.681);
+}
+
+:root[data-theme="light"] {
+  --bg: rgb(162, 231, 210);
+  --bg-trans : rgba(255, 255, 255, 0.338);
+  --link : rgb(34, 0, 62);
+  --link-focus : rgb(255, 227, 43);
+  --word : rgba(186, 255, 212, 0.9);
+  --info1 : rgb(0, 193, 87);
+  --info2: rgba(0, 200, 140, 0.722);
+  --info3 : rgba(36, 235, 59, 0.901);
+  --info4: rgb(96, 216, 66);
+  --info-trans :rgba(0, 176, 67, 0.742);
+  --box: rgb(78, 183, 134);
+  --box-trans : rgba(255, 255, 255, 0.4);
+  --box-focus: rgb(0, 188, 103);
+  --popup : rgb(119, 195, 133);
+  --textbox: rgba(196, 255, 236, 0.708);
+  --textbox-focus : rgba(176, 253, 184, 0.641);
+  --drawer : rgb(56, 206, 106);
+  --border: 1px solid rgb(38, 198, 9);
+  --border-focus: 3px solid rgb(221, 255, 53);
+  --holder: rgb(0, 175, 56);
+  --holder-focus : rgb(0, 93, 6);
+  --button : rgb(142, 220, 175);
+  --button-color: rgb(255, 185, 34);
+  --button-active: rgba(0, 154, 105, 0.934);
+  --button-round : rgba(200, 255, 204, 0.656);
+  --button-round-act: rgb(0, 172, 11);
+  --track : rgba(199, 255, 184, 0.561);
+  --thumb : rgb(0, 126, 4);
+  --shadow: rgba(21, 0, 42, 0.996) 0 0.06rem .3rem;
+  --header: rgb(0, 198, 126);
+  --footer: rgba(113, 202, 135, 0.681);
+}
+
+:root[data-theme="dark"] {
+  --bg: rgb(0, 22, 48);
+  --bg-trans : rgba(255, 255, 255, 0.338);
+  --link : rgb(241, 241, 241);
+  --link-focus : rgb(255, 240, 103);
+  --word : rgba(80, 0, 160, 0.9);
+  --info1 : rgb(71, 25, 127);
+  --info2: rgb(93, 0, 255);
+  --info3 : rgb(117, 33, 226);
+  --info4: rgb(67, 49, 155);
+  --info-trans :rgb(141, 93, 169);
+  --box: rgba(40, 0, 99, 0.67);
+  --box-trans : rgba(24, 13, 43, 0.307);
+  --box-focus: rgb(38, 8, 96);
+  --popup : rgb(42, 0, 115);
+  --textbox: rgba(67, 17, 132, 0.708);
+  --textbox-focus : rgb(39, 0, 65);
+  --drawer : rgba(57, 0, 103, 0.864);
+  --border: 1px solid rgb(146, 82, 255);
+  --border-focus: 3px solid rgb(174, 68, 255);
+  --holder: rgb(173, 173, 173);
+  --holder-focus : rgb(225, 184, 255);
+  --button : rgb(58, 20, 130);
+  --button-color: rgb(255, 234, 44);
+  --button-active: rgba(104, 0, 145, 0.756);
+  --button-round : rgb(255, 255, 255);
+  --button-round-act: rgba(33, 1, 114, 0.604);
+  --track : rgba(0, 5, 51, 0.561);
+  --thumb : rgb(115, 29, 173);
+  --shadow: rgb(225, 156, 255) 0 0.0615rem 0.3125rem;
+  --header: rgba(33, 0, 91, 0.701);
+  --footer: rgba(31, 12, 70, 0.531);
+}
+
+html {
+  background-color: var(--bg);
+  width: 100%;
+  height: 100%;
+  font-size: 62.5%;
+  &[i18next = "ko"],
+  &[i18next = "ja"] {
+    body {
+      text-align: justify;
+      word-break: break-all;
+    }
+  }
+
+  &[i18next= "en"] {
+    body {
+      text-align: justify;
+      word-break: keep-all;
+      -moz-hyphens: auto;
+      -webkit-hyphens: auto;
+      hyphens: auto;
+    }
+  }
+}
+
+
+body {
+  width: 100%;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+  // scroll-behavior: smooth;
+  &::-webkit-scrollbar {
+    position: absolute;
+    appearance: none;
+    position: fixed;
+    width: 10px;
+    height: 100vh;
+    cursor: auto;
+    background-color: var(--track);
+  }
+  &::-webkit-scrollbar-thumb {
+    height: auto;
+    background-color: var(--thumb);
+    border-radius: 30px;
+    cursor: auto;
+  }
+  // image faster load
+  &::after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden !important;
+    z-index: -1;
+    content: url(../assets/images/Gradient1.png) 
+    url(../assets/images/galaxy-8k-j6-1920x1080.jpg) 
+    url(../assets/images/Gradient2.png) 
+    url(../assets/images/Night-Background-long.png)
+  }
+}
+
+
+div#root {
+  width: 100%;
+  height: 100%;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+  background-size: 100% 100% !important;
+  background-repeat: no-repeat;
+  background-attachment: fixed !important;
+  cursor: none;
+  pointer-events: auto;
+  font-family: 'Red Hat Display', 'M PLUS 2', 'NanumSquareRound', sans-serif;
+
+  transition: all 0.3s;
+}
+
+
+
+a,
+button,
+input,
+textarea {
+  text-decoration: none; 
+  cursor: none;
+  pointer-events: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+button,
+input,
+textarea#message {
+  font-family: 'Red Hat Display', 'M PLUS 2', 'NanumSquareRound', sans-serif;
+}
+
+
+button {
+  background-color: transparent;
+}
+
+button {
+  outline: none;
+  appearance: none;
+  border: none;
+}
+
+input {
+  outline: none;
+  appearance: none;
+}
+
+.blind {
+  display: none;
+}
