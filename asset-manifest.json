@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/SSY_portfolio2022/static/css/main.a950f13f.css",
-    "main.js": "/SSY_portfolio2022/static/js/main.ed800840.js",
+    "main.css": "/SSY_portfolio2022/static/css/main.a2d0b8f3.css",
+    "main.js": "/SSY_portfolio2022/static/js/main.d5c94b59.js",
     "static/css/121.fe298f43.chunk.css": "/SSY_portfolio2022/static/css/121.fe298f43.chunk.css",
     "static/js/121.a02ef2c4.chunk.js": "/SSY_portfolio2022/static/js/121.a02ef2c4.chunk.js",
-    "static/css/73.4f137542.chunk.css": "/SSY_portfolio2022/static/css/73.4f137542.chunk.css",
+    "static/css/73.2c27000d.chunk.css": "/SSY_portfolio2022/static/css/73.2c27000d.chunk.css",
     "static/js/73.d1800023.chunk.js": "/SSY_portfolio2022/static/js/73.d1800023.chunk.js",
     "static/js/787.9c99f806.chunk.js": "/SSY_portfolio2022/static/js/787.9c99f806.chunk.js",
     "static/js/26.c3f26f2b.chunk.js": "/SSY_portfolio2022/static/js/26.c3f26f2b.chunk.js",
@@ -56,11 +56,11 @@
     "static/media/a5705a70-f0c6-4a77-b9c4-d9f66892ac52.svg": "/SSY_portfolio2022/static/media/a5705a70-f0c6-4a77-b9c4-d9f66892ac52.08a79313000b20c12b6c.svg",
     "index.html": "/SSY_portfolio2022/index.html",
     "static/media/getFetch.cjs": "/SSY_portfolio2022/static/media/getFetch.40f37ddea2378391108f.cjs",
-    "main.a950f13f.css.map": "/SSY_portfolio2022/static/css/main.a950f13f.css.map",
-    "main.ed800840.js.map": "/SSY_portfolio2022/static/js/main.ed800840.js.map",
+    "main.a2d0b8f3.css.map": "/SSY_portfolio2022/static/css/main.a2d0b8f3.css.map",
+    "main.d5c94b59.js.map": "/SSY_portfolio2022/static/js/main.d5c94b59.js.map",
     "121.fe298f43.chunk.css.map": "/SSY_portfolio2022/static/css/121.fe298f43.chunk.css.map",
     "121.a02ef2c4.chunk.js.map": "/SSY_portfolio2022/static/js/121.a02ef2c4.chunk.js.map",
-    "73.4f137542.chunk.css.map": "/SSY_portfolio2022/static/css/73.4f137542.chunk.css.map",
+    "73.2c27000d.chunk.css.map": "/SSY_portfolio2022/static/css/73.2c27000d.chunk.css.map",
     "73.d1800023.chunk.js.map": "/SSY_portfolio2022/static/js/73.d1800023.chunk.js.map",
     "787.9c99f806.chunk.js.map": "/SSY_portfolio2022/static/js/787.9c99f806.chunk.js.map",
     "26.c3f26f2b.chunk.js.map": "/SSY_portfolio2022/static/js/26.c3f26f2b.chunk.js.map",
@@ -87,7 +87,7 @@
     "667.744c67bc.chunk.js.map": "/SSY_portfolio2022/static/js/667.744c67bc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a950f13f.css",
-    "static/js/main.ed800840.js"
+    "static/css/main.a2d0b8f3.css",
+    "static/js/main.d5c94b59.js"
   ]
 }
