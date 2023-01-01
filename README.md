@@ -1,6 +1,18 @@
 <<<<<<< HEAD
 # SSY_portfolio2022
 Personal Portfolio
+>> 2nd version
+>> Previous one is deleted.
+
+Used Module
+>> react-scroll
+
+Used API
+>> internationalize API i18next
+
+
+
+
 =======
 # Getting Started with Create React App
 
