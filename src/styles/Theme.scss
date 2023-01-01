@@ -348,7 +348,7 @@
     background-color: var(--drawer);
       > button[type="button"].gearBtn {
         background-color: var(--button);
-        >span {
+        > span {
           filter: none;
         }
         &.active {
@@ -691,7 +691,7 @@
           &.active {
             background-color: var(--button-round-act);
             text-shadow: var(--shadow);
-            >span {
+            > span {
               animation: none;
             }
           }

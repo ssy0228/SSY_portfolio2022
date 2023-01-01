@@ -5,7 +5,7 @@
 
 div.ani {
   background-position: right bottom;
-  animation: rocket infinite 5s ease-in 0s;
+  animation: rocket 5s infinite 0s ease-in;
   transform-origin: right center;
 }
 
@@ -401,9 +401,9 @@ div.ani {
 
 // color_change gear img
 div.color_change {
-  >button[type="button"].gearBtn {
+  > button[type="button"].gearBtn {
     > span {
-      animation: wheel infinite 0.5s linear;
+      animation: wheel 0.5s linear infinite;
     }
   }
 }
