@@ -3,6 +3,7 @@
 /* layout common set */
 
 #root {
+  background-color: var(--bg_color);
   a,h1,h2,h3,h4,button[type="button"] {
     color: var(--link);
   }
@@ -400,30 +401,32 @@
     // background-image change
 }
 
-@media screen and (min-width: 481px) {
-  @media screen and (orientation: landscape) {
-    #root {
-      background-image: url(../assets/images/Gradient1.png);
+// @media screen and (min-width: 481px) {
+//   @media screen and (orientation: landscape) {
+//     #root {
+//       background-image: url(../assets/images/Gradient1.png);
       
-    }
-  }
-  @media screen and (orientation: portrait) {
-    #root {
-      background-image: url(../assets/images/Gradient2.png);
-    }
-  }
-}
-@media screen and (max-width: 480px) {
-  #root {
-    background-image: url(../assets/images/Gradient2.png);
-  }
-}
+//     }
+//   }
+//   @media screen and (orientation: portrait) {
+//     #root {
+//       background-image: url(../assets/images/Gradient2.png);
+//     }
+//   }
+// }
+// @media screen and (max-width: 480px) {
+//   #root {
+//     background-image: url(../assets/images/Gradient2.png);
+//   }
+// }
 
 /////LightMode//////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 [data-theme="light"] {
 
   #root {  
+    background-color: var(--bg_color);
+
     .head_inner {
       background-color: var(--header);      
       .gnb {
@@ -737,24 +740,24 @@
       // background-image change
   }
 
-  @media screen and (min-width: 481px) {
-    @media screen and (orientation: landscape) {
-      #root {
-        background-image: url(../assets/images/Gradient1.png);
+  // @media screen and (min-width: 481px) {
+  //   @media screen and (orientation: landscape) {
+  //     #root {
+  //       background-image: url(../assets/images/Gradient1.png);
         
-      }
-    }
-    @media screen and (orientation: portrait) {
-      #root {
-        background-image: url(../assets/images/Gradient2.png);
-      }
-    }
-  }
-  @media screen and (max-width: 480px) {
-    #root {
-      background-image: url(../assets/images/Gradient2.png);
-    }
-  }
+  //     }
+  //   }
+  //   @media screen and (orientation: portrait) {
+  //     #root {
+  //       background-image: url(../assets/images/Gradient2.png);
+  //     }
+  //   }
+  // }
+  // @media screen and (max-width: 480px) {
+  //   #root {
+  //     background-image: url(../assets/images/Gradient2.png);
+  //   }
+  // }
 }
 
 

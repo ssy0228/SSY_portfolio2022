@@ -18,6 +18,7 @@
 :root {
   --bg: rgb(232, 247, 255);
   --bg-trans : rgba(255, 255, 255, 0.531);
+  --bg_color : rgb(169, 202, 226);
   --link : rgb(3, 0, 82);
   --link-focus : rgb(255, 244, 39);
   --word : rgba(140, 238, 255, 0.9);
@@ -62,6 +63,7 @@
 :root[data-theme="light"] {
   --bg: rgb(232, 247, 255);
   --bg-trans : rgba(255, 255, 255, 0.531);
+  --bg_color : rgb(169, 202, 226);
   --link : rgb(3, 0, 82);
   --link-focus : rgb(255, 244, 39);
   --word : rgba(140, 238, 255, 0.9);
