@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/SSY_portfolio2022/static/css/main.45f24478.css",
+    "main.css": "/SSY_portfolio2022/static/css/main.73acaadd.css",
     "main.js": "/SSY_portfolio2022/static/js/main.d589c2b5.js",
     "static/css/121.fe298f43.chunk.css": "/SSY_portfolio2022/static/css/121.fe298f43.chunk.css",
     "static/js/121.a02ef2c4.chunk.js": "/SSY_portfolio2022/static/js/121.a02ef2c4.chunk.js",
@@ -56,7 +56,7 @@
     "static/media/a5705a70-f0c6-4a77-b9c4-d9f66892ac52.svg": "/SSY_portfolio2022/static/media/a5705a70-f0c6-4a77-b9c4-d9f66892ac52.08a79313000b20c12b6c.svg",
     "index.html": "/SSY_portfolio2022/index.html",
     "static/media/getFetch.cjs": "/SSY_portfolio2022/static/media/getFetch.40f37ddea2378391108f.cjs",
-    "main.45f24478.css.map": "/SSY_portfolio2022/static/css/main.45f24478.css.map",
+    "main.73acaadd.css.map": "/SSY_portfolio2022/static/css/main.73acaadd.css.map",
     "main.d589c2b5.js.map": "/SSY_portfolio2022/static/js/main.d589c2b5.js.map",
     "121.fe298f43.chunk.css.map": "/SSY_portfolio2022/static/css/121.fe298f43.chunk.css.map",
     "121.a02ef2c4.chunk.js.map": "/SSY_portfolio2022/static/js/121.a02ef2c4.chunk.js.map",
@@ -87,7 +87,7 @@
     "667.744c67bc.chunk.js.map": "/SSY_portfolio2022/static/js/667.744c67bc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.45f24478.css",
+    "static/css/main.73acaadd.css",
     "static/js/main.d589c2b5.js"
   ]
 }
