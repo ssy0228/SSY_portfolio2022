@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import data from "../assets/data/WorksList.json";
 import "../styles/pages/works.scss";
@@ -391,7 +391,7 @@ const Works = () => {
                         return (
                           <article key={item.id} className={`proj5 ${isActive === true ? "" : "view"}`}>
                             <div id="5" className="intro_img">
-                              <div className={device[device.length % 2]}>
+                              <div className={device[device.length - 1]}>
                                 <div className="imac">
                                   <img src={process.env.PUBLIC_URL + `/assets/images/imac.png`} alt="mock_imac" />
                                   <span className="animate_imac">
@@ -404,11 +404,17 @@ const Works = () => {
                                     <img src={process.env.PUBLIC_URL + item.src1} alt={item.alt2} />
                                   </span>
                                 </div>
+                                <div className="ipad">
+                                  <img src={process.env.PUBLIC_URL + `/assets/images/ipad.png`} alt="mock_ipad" />
+                                  <span className="animate_ipad">
+                                    <img src={process.env.PUBLIC_URL + item.src2} alt={item.alt2} />
+                                  </span>
+                                </div>
                               </div>
                             </div>
                             <div className="intro_txt">
                               <h3 className="bold">{t(`title5`)}</h3>
-                              <span className="web_acc_valid">REACT+TS or HTML5+TS</span>
+                              <span className="web_acc_valid">Drawing and Painting</span>
                               <div className="information">
                                 <span className="web_info">{t(`tab5_explain1`)}</span>
                               </div>
@@ -429,7 +435,7 @@ const Works = () => {
                                     </tr>
                                     <tr>
                                       <td className="head">{t("th_title4")}</td>
-                                      <td className="en">{device[device.length % 2]}</td>
+                                      <td className="en">{device[device.length - 1]}</td>
                                     </tr>
                                   </tbody>
                                 </table>

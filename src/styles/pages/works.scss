@@ -316,7 +316,7 @@
 }
 .proj5 {
   > .intro_img {
-    >.PC {
+    >.Mobile-PC {
       > .imac {
         >.animate_imac {
           > img {
@@ -327,6 +327,14 @@
       }
       >.macbook {
         >.animate_macbook {
+          > img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      > .ipad {
+        >.animate_ipad {
           > img {
             width: 100%;
             height: 100%;
