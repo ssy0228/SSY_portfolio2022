@@ -37,9 +37,9 @@ const Head = () => {
             <span className="symbol">icon3</span>
             <span className="link_title">Skills</span>
           </Link>
-          <Link to="works" activeClass="bold" className="fourth" spy={true} duration={500} smooth={true} offset={0}>
+          <Link to="projects" activeClass="bold" className="fourth" spy={true} duration={500} smooth={true} offset={0}>
             <span className="symbol">icon4</span>
-            <span className="link_title">Works</span>
+            <span className="link_title">Projects</span>
           </Link>
           <Link to="contact" activeClass="bold" className="fifth" spy={true} duration={500} smooth={true} offset={0}>
             <span className="symbol">icon5</span>

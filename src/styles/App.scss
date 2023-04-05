@@ -96,7 +96,7 @@ div.pages {
         grid-template-columns: 100%;
         grid-template-rows: 10% 90%;      
       }
-      #works {
+      #projects {
         height: var(--vh);
         grid-template-columns: 100%;
         grid-template-rows: 10% 90%;
@@ -232,7 +232,7 @@ div.pages {
         }
         #about,
         #skills,
-        #works {
+        #projects {
           padding: 15vh 0 15vh;
         }
       }
@@ -242,7 +242,7 @@ div.pages {
         }
         #about,
         #skills,
-        #works {
+        #projects {
           padding: 15vh 0 10vh;
         }
       }
@@ -255,7 +255,7 @@ div.pages {
         }
         #about,
         #skills,
-        #works {
+        #projects {
           padding: 15vh 0 15vh;
         }
       }
@@ -265,7 +265,7 @@ div.pages {
         }
         #about,
         #skills,
-        #works {
+        #projects {
           padding: 15vh 0 15vh;
         }
         .footer_box {
@@ -283,7 +283,7 @@ div.pages {
         }
         #about,
         #skills,
-        #works {
+        #projects {
           padding: 15vh 0;
         }
       }
@@ -293,7 +293,7 @@ div.pages {
         }
         #about,
         #skills,
-        #works {
+        #projects {
           padding: 15vh 0 10vh;
         }
       }
@@ -307,7 +307,7 @@ div.pages {
         }
         #about,
         #skills,
-        #works {
+        #projects {
           padding: 15vh 0;
         }
       }
@@ -317,7 +317,7 @@ div.pages {
         }
         #about,
         #skills,
-        #works {
+        #projects {
           padding: 15vh 0 10vh;
         }
       }
@@ -354,7 +354,7 @@ div.pages {
       }
       #about,
       #skills,
-      #works {
+      #projects {
         padding: 15vh 0 15vh;
       }
       .footer_box {
@@ -406,7 +406,7 @@ div.pages {
         }
         #about,
         #skills,
-        #works {
+        #projects {
           padding: 15vh 0 10vh;
         }
         .footer_box {
@@ -420,7 +420,7 @@ div.pages {
         }
         #about,
         #skills,
-        #works {
+        #projects {
           padding: 15vh 0;
         }
         .footer_box {
@@ -474,7 +474,7 @@ div.pages {
         }
         #about,
         #skills,
-        #works {
+        #projects {
           padding: 15vh 0;
         }
         .footer_box {
@@ -484,7 +484,7 @@ div.pages {
         @media screen and (max-height: 650px) {
           #about,
           #skills,
-          #works {
+          #projects {
             padding: 10vh 0 5vh;
           }
           .footer_box {
@@ -535,7 +535,7 @@ div.pages {
         }
         #about,
         #skills,
-        #works {
+        #projects {
           padding: 15vh 0 10vh;
         }
         .footer_box {
@@ -589,7 +589,7 @@ div.pages {
         }
         #about,
         #skills,
-        #works {
+        #projects {
           padding: 10vh 0 15vh;
         }
         .footer_box {
@@ -600,7 +600,7 @@ div.pages {
         @media screen and (max-height: 600px) {
           #about,
           #skills,
-          #works {
+          #projects {
             padding: 10vh 0 5vh;
           }
           .footer_box {
@@ -615,7 +615,7 @@ div.pages {
         }
         #about,
         #skills,
-        #works {
+        #projects {
           padding: 15vh 0 10vh;
         }
         .footer_box {
@@ -628,7 +628,7 @@ div.pages {
           }
           #about,
           #skills,
-          #works {
+          #projects {
             padding: 10vh 0 5vh;
           }
           .footer_box {
@@ -711,7 +711,7 @@ div.pages {
             grid-template-rows: 10% 90%;
             padding: 10rem 0 5rem;
           }
-          #works {
+          #projects {
             height: auto;
             max-height: -moz-fit-content;
             max-height: fit-content;
@@ -816,7 +816,7 @@ div.pages {
               grid-template-rows: 5% 95%;
               padding: 10rem 0 0;
             }
-            #works {
+            #projects {
               height: auto;
               max-height: -moz-fit-content;
               max-height: fit-content;

@@ -6,7 +6,7 @@ const Navigation = lazy(() => import("./components/Head"));
 const Banner = lazy(() => import("./Pages/Banner"));
 const About = lazy(() => import("./Pages/About"));
 const Skills = lazy(() => import("./Pages/Skills"));
-const Works = lazy(() => import("./Pages/Works"));
+const Projects = lazy(() => import("./Pages/Projects"));
 const Contact = lazy(() => import("./Pages/Contact"));
 const Footer = lazy(() => import("./components/Footer"));
 const ModeChanger = lazy(() => import("./components/Customs/Dark&Scroll"));
@@ -32,7 +32,7 @@ const App = () => {
         <div className="wrapper">
           <About />
           <Skills />
-          <Works />
+          <Projects />
           <Contact />
         </div>
         <Footer />

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import data from "../assets/data/WorksList.json";
-import "../styles/pages/works.scss";
+import data from "../assets/data/ProjectsList.json";
+import "../styles/pages/projects.scss";
 
-const Works = () => {
+const Projects = () => {
   const { t } = useTranslation("translation");
   const device = ['PC', 'Mobile-PC'];
   // const ref = useRef([]);
@@ -20,8 +20,8 @@ const Works = () => {
   // }
 
   return (
-    <section id="works" className="container" name="works" >
-      <h2 className="bold en">Works</h2>
+    <section id="projects" className="container" name="projects" >
+      <h2 className="bold en">Projects</h2>
       <div className="proj_wrapper">
         <nav className="proj_nav">
           {
@@ -580,4 +580,4 @@ const Works = () => {
   );
 };
 
-export default Works;
+export default Projects;

@@ -30,8 +30,8 @@ const Foot = () => {
             <Link className="third" to="skills" smooth={true} duration={500} spy={true}>
               <span className="link_title">Skills</span>
             </Link>
-            <Link className="fourth" to="works" smooth={true} duration={500} spy={true}>
-              <span className="link_title">Works</span>
+            <Link className="fourth" to="projects" smooth={true} duration={500} spy={true}>
+              <span className="link_title">Projects</span>
             </Link>
             <Link className="fifth" to="contact" smooth={true} duration={500} spy={true}>
               <span className="link_title">Thanks</span>
